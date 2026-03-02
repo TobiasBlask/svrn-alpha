@@ -213,16 +213,29 @@ const Problem = () => (
       </div>
 
       <div style={{ display: "flex", gap: 16, width: "100%" }}>
-        {[1, 2, 3].map(i => (
+        {[
+          {
+            title: "Education Deficit",
+            desc: "Most AI initiatives skip straight to deployment. The shift from Creator to Curator is cognitive, requiring analysts to understand why curating AI-generated outputs lets them focus on alpha generation."
+          },
+          {
+            title: "Process Rigidity",
+            desc: "Dropping AI into existing workflows fails because the workflows themselves need restructuring. The typical analyst spends 70% of their time on routine tasks—AI must invert that ratio."
+          },
+          {
+            title: "Abdicated Leadership",
+            desc: "AI transformation is not an IT project. When the C-suite delegates this to technology departments, it dies. Successful AI deployment requires the CEO or MD to personally own the transformation."
+          }
+        ].map((chal, i) => (
           <div key={i} style={{
             flex: 1, padding: "32px 32px 28px", borderRadius: 12,
             background: `linear-gradient(135deg, var(--card-grad-start) 0%, var(--card-grad-end) 100%)`,
             border: "1px solid var(--border-light)", display: "flex", flexDirection: "column", gap: 16
           }}>
             <div style={{ width: 40, height: 40, borderRadius: 8, background: "var(--border-subtle)", marginBottom: 16 }} />
-            <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)", fontWeight: 600 }}>Challenge {i}</h3>
+            <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)", fontWeight: 600 }}>{chal.title}</h3>
             <p style={{ fontFamily: "var(--font-sans)", fontSize: 15, color: "var(--text-secondary)", lineHeight: 1.5 }}>
-              Process rigidity prevents AI adoption. Analysts spend 70% of time on routine work instead of strategic insight generation.
+              {chal.desc}
             </p>
           </div>
         ))}
@@ -259,11 +272,24 @@ const Capabilities = () => (
       </div>
 
       <div style={{ display: "flex", gap: 16, width: "100%" }}>
-        {["Proprietary Knowledge Graphs", "Process Transformation", "Executive Education"].map((title, i) => (
+        {[
+          {
+            title: "Proprietary Knowledge Graphs",
+            desc: "Connecting internal research datalakes natively to embedded reasoning agents to protect your data moat."
+          },
+          {
+            title: "Process Transformation",
+            desc: "The Capacity Flip: inverting the workflow to reallocate human capital from routine tasks to alpha generation."
+          },
+          {
+            title: "Executive Education",
+            desc: "Building AI fluency at every level, from the trading floor to the boardroom, moving teams from Creators to Curators."
+          }
+        ].map((feature, i) => (
           <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", gap: 12, paddingTop: 16, borderTop: "1px solid var(--border-subtle)" }}>
-            <h4 style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-primary)", fontWeight: 600 }}>{title}</h4>
+            <h4 style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-primary)", fontWeight: 600 }}>{feature.title}</h4>
             <p style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", lineHeight: 1.5 }}>
-              Connecting internal research datalakes natively to embedded reasoning agents.
+              {feature.desc}
             </p>
           </div>
         ))}
@@ -287,18 +313,34 @@ const SocialProof = () => (
       </div>
 
       <div style={{ display: "flex", gap: 16, width: "100%" }}>
-        {[1, 2, 3].map(i => (
+        {[
+          {
+            client: "Tier 1 European Bank",
+            quote: `"svrn alpha reduced our credit memo generation time by 60% while increasing regulatory audit traceability. Their hybrid sovereign approach allowed us to clear compliance hurdles in weeks, not years."`,
+            author: "— Managing Director, M&A"
+          },
+          {
+            client: "Global Asset Manager",
+            quote: `"SVRN ALPHA didn't just give us tools. They gave us a sovereign capability. We successfully converted analysts from Creators to Curators, flipping our capacity ratio to 70% strategic work."`,
+            author: "— Head of Research"
+          },
+          {
+            client: "Private Equity Firm",
+            quote: `"With EU AI Act compliance natively embedded into our model-agnostic infrastructure, we deploy state-of-the-art models without risking data sovereignty or proprietary knowledge."`,
+            author: "— Chief Operating Officer"
+          }
+        ].map((proof, i) => (
           <div key={i} style={{
             flex: 1, padding: 32, borderRadius: 12,
             background: `linear-gradient(135deg, var(--card-grad-start) 0%, var(--card-grad-end) 100%)`,
             border: i === 1 ? "2px solid var(--text-accent)" : "1px solid var(--border-light)",
             display: "flex", flexDirection: "column", gap: 24
           }}>
-            <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)" }}>Tier 1 European Bank</h3>
+            <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)" }}>{proof.client}</h3>
             <p style={{ fontFamily: "var(--font-sans)", fontSize: 15, color: "var(--text-secondary)", lineHeight: 1.5 }}>
-              "svrn alpha reduced our credit memo generation time by 60% while increasing regulatory audit traceability. Their hybrid sovereign approach allowed us to clear compliance hurdles in weeks, not years."
+              {proof.quote}
             </p>
-            <div style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--text-muted)", fontWeight: 500 }}>— Managing Director, M&A</div>
+            <div style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--text-muted)", fontWeight: 500 }}>{proof.author}</div>
           </div>
         ))}
       </div>
