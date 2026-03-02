@@ -147,7 +147,7 @@ const Hero = () => (
       </h1>
 
       <p style={{ fontFamily: "var(--font-sans)", fontSize: 19, color: "var(--text-secondary)", textAlign: "center", maxWidth: 720, lineHeight: 1.6, margin: 0 }}>
-        Strategic AI Infrastructure for Europe and the UK — svrn alpha partners with financial institutions to redesign operations through AI, organizational transformation, and executive education.
+        Empowering capital markets with two core scalable solutions: A SaaS AI-powered Investor Relations Dashboard for deep data visualization and a customizable Dispute Resolution Tool.
       </p>
 
       <div style={{ display: "flex", gap: 16 }}>
@@ -263,9 +263,9 @@ const Capabilities = () => (
         background: "var(--card-bg)", border: "1px solid var(--border-light)", alignItems: "center"
       }}>
         <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 16 }}>
-          <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 28, color: "var(--text-primary)" }}>Sovereign Infrastructure</h3>
+          <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 28, color: "var(--text-primary)" }}>SaaS Investor Relations Dashboard</h3>
           <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6 }}>
-            Our Model-Agnostic architecture ensures zero vendor lock-in. Switch between US proprietary models, open-source equivalents, or European LLMs instantly, while retaining full auditability required by the EU AI Act.
+            A super attractive, scalable business model combining deep data visualization with AI chat capabilities. Designed specifically to differentiate your firm from established players like Nastic AR or German Börse Cockpit through a more agile, high-value offering.
           </p>
         </div>
         <div style={{ width: 360, height: 200, background: "var(--border-subtle)", borderRadius: 10, border: "1px solid var(--border-light)" }} />
@@ -274,16 +274,16 @@ const Capabilities = () => (
       <div style={{ display: "flex", gap: 16, width: "100%" }}>
         {[
           {
-            title: "Proprietary Knowledge Graphs",
-            desc: "Connecting internal research datalakes natively to embedded reasoning agents to protect your data moat."
+            title: "Customizable Dispute Resolution",
+            desc: "A specialized tool featuring extensive adjustment options to tailor the dispute resolution process entirely to your institution's specific workflow."
           },
           {
-            title: "Process Transformation",
-            desc: "The Capacity Flip: inverting the workflow to reallocate human capital from routine tasks to alpha generation."
+            title: "Cost-Effective Pricing Models",
+            desc: "Positioned competitively against legacy systems with flexible licensing models."
           },
           {
-            title: "Executive Education",
-            desc: "Building AI fluency at every level, from the trading floor to the boardroom, moving teams from Creators to Curators."
+            title: "Scalable Value Proposition",
+            desc: "Designed to serve our target market of 20-30 core enterprise customers."
           }
         ].map((feature, i) => (
           <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", gap: 12, paddingTop: 16, borderTop: "1px solid var(--border-subtle)" }}>
@@ -316,13 +316,13 @@ const SocialProof = () => (
         {[
           {
             client: "Tier 1 European Bank",
-            quote: `"svrn alpha reduced our credit memo generation time by 60% while increasing regulatory audit traceability. Their hybrid sovereign approach allowed us to clear compliance hurdles in weeks, not years."`,
-            author: "— Managing Director, M&A"
+            quote: `"The SaaS Investor Relations Dashboard gave our IR team a completely new level of insight. The AI chat feature combined with real-time data visualization is far superior to legacy systems we previously used."`,
+            author: "— Head of Investor Relations"
           },
           {
             client: "Global Asset Manager",
-            quote: `"SVRN ALPHA didn't just give us tools. They gave us a sovereign capability. We successfully converted analysts from Creators to Curators, flipping our capacity ratio to 70% strategic work."`,
-            author: "— Head of Research"
+            quote: `"The sophisticated adjustment options within the Dispute Resolution Tool allowed us to perfectly map our internal compliance workflows. It's a highly customizable, low-cost solution that just works."`,
+            author: "— Chief Compliance Officer"
           },
           {
             client: "Private Equity Firm",
@@ -407,7 +407,7 @@ const FinalCTA = () => (
       </h2>
 
       <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", textAlign: "center", maxWidth: 560, lineHeight: 1.6 }}>
-        Technology. Process. Education. Roles. svrn alpha delivers the complete transformation — grounded in academic rigour, built for the speed of modern capital markets.
+        Discover our scalable SaaS Investor Relations Dashboard and customizable Dispute Resolution products. Built to differentiate and deliver high value.
       </p>
 
       <div style={{ display: "flex", gap: 16 }}>
