@@ -12,6 +12,7 @@ import ReferenceCasePage from "./pages/ReferenceCasePage";
 import WhitepaperPage from "./pages/WhitepaperPage";
 import Press from "./pages/Press";
 import About from "./pages/About";
+import ArticleGIC from "./pages/ArticleGIC";
 
 // --- Theme Toggle Hook ---
 const useTheme = () => {
@@ -54,6 +55,7 @@ export default function App() {
             <Route path="/whitepaper" element={<WhitepaperPage />} />
             <Route path="/press" element={<Press />} />
             <Route path="/about" element={<About />} />
+            <Route path="/research/gic-2028" element={<ArticleGIC />} />
           </Routes>
         </main>
         <Footer />

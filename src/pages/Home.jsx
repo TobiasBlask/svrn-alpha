@@ -128,7 +128,7 @@ export const BudgetInversion = () => (
                     The Budget Inversion
                 </h3>
                 <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", lineHeight: 1.6, maxWidth: 800, margin: 0 }}>
-                    Banks typically allocate 90% of their AI transformation budget to technology and 10% to change management. This allocation is precisely backwards. The Three-Pillar Model corrects this inversion.
+                    Banks typically allocate 90% of their AI transformation budget to technology and 10% to change management. This allocation is precisely backwards. The Three-Pillar Model corrects this inversion to an optimal 25/30/45 split.
                 </p>
 
                 <div style={{ display: "flex", gap: 32, marginTop: 16 }}>
@@ -145,9 +145,9 @@ export const BudgetInversion = () => (
                     <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 16 }}>
                         <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>THE THREE-PILLAR MODEL (OPTIMAL)</div>
                         <div style={{ display: "flex", height: 48, borderRadius: 8, overflow: "hidden" }}>
-                            <div style={{ width: "40%", background: "var(--text-accent)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }}>Education (40%)</div>
+                            <div style={{ width: "25%", background: "var(--text-accent)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }}>Edu (25%)</div>
                             <div style={{ width: "30%", background: "var(--btn-primary-end)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }}>Process (30%)</div>
-                            <div style={{ width: "30%", background: "var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", fontWeight: 500 }}>Tech (30%)</div>
+                            <div style={{ width: "45%", background: "var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", fontWeight: 500 }}>Tech (45%)</div>
                         </div>
                     </div>
                 </div>

@@ -1,21 +1,32 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Section } from '../components/Section';
 
-const ArticleCard = ({ badge, title, date, desc, link }) => (
-    <div
-        onClick={() => link ? window.open(link, '_blank') : null}
-        style={{
-            padding: 32, borderRadius: 12, border: "1px solid var(--border-subtle)",
-            background: "var(--card-bg)", display: "flex", flexDirection: "column", gap: 16,
-            cursor: link ? "pointer" : "default", transition: "all 0.2s ease"
-        }}
-    >
-        <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-accent)", fontWeight: 600 }}>{badge}</div>
-        <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 24, color: "var(--text-primary)", margin: 0 }}>{title}</h3>
-        <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)" }}>{date}</div>
-        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>{desc}</p>
-    </div>
-);
+const ArticleCard = ({ badge, title, date, desc, link, internalRoute }) => {
+    const navigate = useNavigate();
+
+    return (
+        <div
+            onClick={() => {
+                if (internalRoute) {
+                    navigate(internalRoute);
+                } else if (link) {
+                    window.open(link, '_blank');
+                }
+            }}
+            style={{
+                padding: 32, borderRadius: 12, border: "1px solid var(--border-subtle)",
+                background: "var(--card-bg)", display: "flex", flexDirection: "column", gap: 16,
+                cursor: (link || internalRoute) ? "pointer" : "default", transition: "all 0.2s ease"
+            }}
+        >
+            <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-accent)", fontWeight: 600 }}>{badge}</div>
+            <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 24, color: "var(--text-primary)", margin: 0 }}>{title}</h3>
+            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)" }}>{date}</div>
+            <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>{desc}</p>
+        </div>
+    );
+};
 
 export default function Research() {
     return (
@@ -42,7 +53,7 @@ export default function Research() {
                         title="The 2028 Global Intelligence Crisis: When Friction Goes to Zero"
                         date="February 22, 2026 · 14 min read"
                         desc="A thought exercise from the future detailing the macroeconomic consequences of abundant machine intelligence: structured labor displacement, collapsing intermediate friction, and the unspooling of the intelligence premium."
-                        link="https://www.citriniresearch.com/p/2028gic"
+                        internalRoute="/research/gic-2028"
                     />
 
                     <ArticleCard
