@@ -161,7 +161,7 @@ const Hero = () => (
 
       {/* Hero Visualization - The Three Pillars */}
       <div style={{
-        width: "100%", height: 420, borderRadius: 12, display: "flex", overflow: "hidden",
+        width: "100%", borderRadius: 12, display: "flex", overflow: "hidden",
         border: "1px solid var(--border-light)", background: "var(--card-bg)"
       }}>
         {/* Pillar 1 */}
@@ -171,11 +171,6 @@ const Hero = () => (
           <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
             <strong>The Creator-to-Curator Shift.</strong><br /><br />Reorienting professionals from manual content creation to high-value insight curation and validation.
           </p>
-          <div style={{ marginTop: "auto", height: 100, borderTop: "1px solid var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <div style={{ width: 48, height: 48, borderRadius: "50%", border: "2px dashed var(--text-accent)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <div style={{ width: 16, height: 16, borderRadius: "50%", background: "var(--text-accent)" }} />
-            </div>
-          </div>
         </div>
         {/* Pillar 2 */}
         <div style={{ flex: 1, borderRight: "1px solid var(--border-subtle)", padding: 48, display: "flex", flexDirection: "column", gap: 24, background: "rgba(0,184,255,0.02)" }}>
@@ -184,11 +179,6 @@ const Hero = () => (
           <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
             <strong>The Capacity Flip.</strong><br /><br />Inverting analyst time allocation from 70% routine to 70% strategic work through workflow redesign.
           </p>
-          <div style={{ marginTop: "auto", height: 100, borderTop: "1px solid var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center", gap: 12 }}>
-            <div style={{ width: 32, height: 48, borderRadius: 6, background: "var(--border-subtle)" }} />
-            <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-accent)" }}>→</div>
-            <div style={{ width: 32, height: 48, borderRadius: 6, background: "var(--text-accent)" }} />
-          </div>
         </div>
         {/* Pillar 3 */}
         <div style={{ flex: 1, padding: 48, display: "flex", flexDirection: "column", gap: 24 }}>
@@ -197,11 +187,6 @@ const Hero = () => (
           <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
             <strong>Sovereign Architecture.</strong><br /><br />Model-agnostic infrastructure embedding structural Human-in-the-Loop checkpoints by design.
           </p>
-          <div style={{ marginTop: "auto", height: 100, borderTop: "1px solid var(--border-subtle)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 8 }}>
-            <div style={{ width: 64, height: 12, borderRadius: 4, background: "var(--text-accent)" }} />
-            <div style={{ width: 48, height: 12, borderRadius: 4, background: "var(--border-subtle)" }} />
-            <div style={{ width: 64, height: 12, borderRadius: 4, background: "var(--text-primary)" }} />
-          </div>
         </div>
       </div>
 
