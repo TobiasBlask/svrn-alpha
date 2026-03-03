@@ -38,9 +38,12 @@ export default function About() {
 
                         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
                             <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 32, color: "var(--text-primary)", margin: 0 }}>Founder</h3>
-                            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                                <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)", fontWeight: 600 }}>Prof. Dr. Tobias Blask</div>
-                                <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>Professor, Founder & Chairman</div>
+                            <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+                                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGKORxWDPLBvQ/profile-displayphoto-crop_800_800/B4DZwGC3Y7G4AI-/0/1769627941019?e=1773878400&v=beta&t=woTl7s448ZeU4Wu6-EJBd2dc3bgl5_Ina3qoCQ_v8BE" alt="Prof. Dr. Tobias Blask" style={{ width: 64, height: 64, borderRadius: "50%", border: "2px solid var(--border-subtle)", objectFit: "cover" }} />
+                                <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                                    <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)", fontWeight: 600 }}>Prof. Dr. Tobias Blask</div>
+                                    <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>Professor, Founder & Chairman</div>
+                                </div>
                             </div>
                             <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
                                 Academic researcher turned practitioner. Over a decade of published research on digital transformation in financial institutions, combined with hands-on implementation experience inside European investment banks.

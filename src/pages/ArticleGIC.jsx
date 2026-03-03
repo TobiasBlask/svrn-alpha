@@ -15,6 +15,14 @@ export default function ArticleGIC() {
                         The 2028 Global Intelligence Crisis: When Friction Goes to Zero
                     </h1>
                     <div className="flex-wrap-mobile gap-mobile-md" style={{ display: "flex", gap: 24, alignItems: "center", borderTop: "1px solid var(--border-subtle)", borderBottom: "1px solid var(--border-subtle)", padding: "16px 0" }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGKORxWDPLBvQ/profile-displayphoto-crop_800_800/B4DZwGC3Y7G4AI-/0/1769627941019?e=1773878400&v=beta&t=woTl7s448ZeU4Wu6-EJBd2dc3bgl5_Ina3qoCQ_v8BE" alt="Prof. Dr. Tobias Blask" style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid var(--border-subtle)", objectFit: "cover" }} />
+                            <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                                <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--text-muted)" }}>AUTHOR</div>
+                                <div style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-primary)", fontWeight: 500 }}>Prof. Dr. T. Blask</div>
+                            </div>
+                        </div>
+                        <div style={{ width: 1, height: 32, background: "var(--border-subtle)" }} />
                         <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
                             <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--text-muted)" }}>PUBLISHED</div>
                             <div style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-primary)", fontWeight: 500 }}>February 22, 2026</div>
