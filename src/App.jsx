@@ -133,7 +133,7 @@ const Nav = ({ theme, toggleTheme }) => (
 
 const Hero = () => (
   <Section bgCenter="--bg-hero-center" bgOuter="--bg-hero-outer" type="radial" padding="100px 120px 80px">
-    <div style={{ maxWidth: 900, display: "flex", flexDirection: "column", alignItems: "center", gap: 32 }}>
+    <div style={{ maxWidth: 1080, display: "flex", flexDirection: "column", alignItems: "center", gap: 32 }}>
 
       <div style={{ display: "flex", alignItems: "center", gap: 8, background: "rgba(16, 58, 90, 0.25)", padding: "6px 14px", borderRadius: 100, border: "1px solid var(--border-subtle)" }}>
         <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--text-accent)" }} />
@@ -142,8 +142,8 @@ const Hero = () => (
         </span>
       </div>
 
-      <h1 style={{ fontFamily: "var(--font-serif)", fontSize: 72, fontWeight: "normal", letterSpacing: -2, color: "var(--text-primary)", textAlign: "center", lineHeight: 1.1, margin: 0 }}>
-        Sovereign AI Enablement<br />for Investment Banking
+      <h1 style={{ fontFamily: "var(--font-serif)", fontSize: 64, fontWeight: "normal", letterSpacing: -2, color: "var(--text-primary)", textAlign: "center", lineHeight: 1.1, margin: 0 }}>
+        Sovereign AI Enablement<br />for Investment Banking and the Financial Industry
       </h1>
 
       <p style={{ fontFamily: "var(--font-sans)", fontSize: 19, color: "var(--text-secondary)", textAlign: "center", maxWidth: 720, lineHeight: 1.6, margin: 0 }}>
@@ -159,14 +159,50 @@ const Hero = () => (
         Founded by Prof. Dr. Tobias Blask — bringing academic depth and financial expertise to every engagement
       </p>
 
-      {/* Hero Visualization Placeholder */}
+      {/* Hero Visualization - The Three Pillars */}
       <div style={{
-        width: 900, height: 480, borderRadius: 12, display: "flex", overflow: "hidden",
+        width: "100%", height: 420, borderRadius: 12, display: "flex", overflow: "hidden",
         border: "1px solid var(--border-light)", background: "var(--card-bg)"
       }}>
-        <div style={{ flex: 1, borderRight: "1px solid var(--border-subtle)" }}></div>
-        <div style={{ flex: 1, borderRight: "1px solid var(--border-subtle)" }}></div>
-        <div style={{ flex: 1 }}></div>
+        {/* Pillar 1 */}
+        <div style={{ flex: 1, borderRight: "1px solid var(--border-subtle)", padding: 48, display: "flex", flexDirection: "column", gap: 24 }}>
+          <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", fontWeight: 600, letterSpacing: 1 }}>PILLAR I</div>
+          <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 28, color: "var(--text-primary)", margin: 0, fontWeight: 500 }}>Education</h3>
+          <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+            <strong>The Creator-to-Curator Shift.</strong><br /><br />Reorienting professionals from manual content creation to high-value insight curation and validation.
+          </p>
+          <div style={{ marginTop: "auto", height: 100, borderTop: "1px solid var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div style={{ width: 48, height: 48, borderRadius: "50%", border: "2px dashed var(--text-accent)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ width: 16, height: 16, borderRadius: "50%", background: "var(--text-accent)" }} />
+            </div>
+          </div>
+        </div>
+        {/* Pillar 2 */}
+        <div style={{ flex: 1, borderRight: "1px solid var(--border-subtle)", padding: 48, display: "flex", flexDirection: "column", gap: 24, background: "rgba(0,184,255,0.02)" }}>
+          <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", fontWeight: 600, letterSpacing: 1 }}>PILLAR II</div>
+          <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 28, color: "var(--text-primary)", margin: 0, fontWeight: 500 }}>Process</h3>
+          <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+            <strong>The Capacity Flip.</strong><br /><br />Inverting analyst time allocation from 70% routine to 70% strategic work through workflow redesign.
+          </p>
+          <div style={{ marginTop: "auto", height: 100, borderTop: "1px solid var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center", gap: 12 }}>
+            <div style={{ width: 32, height: 48, borderRadius: 6, background: "var(--border-subtle)" }} />
+            <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-accent)" }}>→</div>
+            <div style={{ width: 32, height: 48, borderRadius: 6, background: "var(--text-accent)" }} />
+          </div>
+        </div>
+        {/* Pillar 3 */}
+        <div style={{ flex: 1, padding: 48, display: "flex", flexDirection: "column", gap: 24 }}>
+          <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", fontWeight: 600, letterSpacing: 1 }}>PILLAR III</div>
+          <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 28, color: "var(--text-primary)", margin: 0, fontWeight: 500 }}>Technology</h3>
+          <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+            <strong>Sovereign Architecture.</strong><br /><br />Model-agnostic infrastructure embedding structural Human-in-the-Loop checkpoints by design.
+          </p>
+          <div style={{ marginTop: "auto", height: 100, borderTop: "1px solid var(--border-subtle)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 8 }}>
+            <div style={{ width: 64, height: 12, borderRadius: 4, background: "var(--text-accent)" }} />
+            <div style={{ width: 48, height: 12, borderRadius: 4, background: "var(--border-subtle)" }} />
+            <div style={{ width: 64, height: 12, borderRadius: 4, background: "var(--text-primary)" }} />
+          </div>
+        </div>
       </div>
 
     </div>
