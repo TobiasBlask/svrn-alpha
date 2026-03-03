@@ -78,7 +78,7 @@ export default function ReferenceCasePage() {
                             "SVRN ALPHA didn't just give us tools. They gave us a sovereign capability. Our analysts think differently, our workflows are fundamentally restructured, and our proprietary knowledge compounds in infrastructure we own. That's not a vendor relationship — it's an institutional advantage."
                         </p>
                         <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)", letterSpacing: 1 }}>
-                            — Senior Managing Director, MP Capital Markets
+                            — Ebrahim Attarzadeh, CEO Münchmeyer Petersen Capital Markets
                         </div>
                     </div>
 
