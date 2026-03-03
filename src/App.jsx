@@ -443,97 +443,136 @@ const SovereignArchitecture = () => (
   </Section>
 );
 
-const SocialProof = () => (
+const ReferenceCase = () => (
   <Section bgCenter="--bg-social-top" bgOuter="--bg-social-bottom" type="linear" padding="100px 120px">
-    <div style={{ maxWidth: 1200, width: "100%", display: "flex", flexDirection: "column", gap: 60, alignItems: "center" }}>
+    <div style={{ maxWidth: 1200, width: "100%", display: "flex", flexDirection: "column", gap: 64 }}>
 
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12 }}>
-        <div style={{ border: "1px solid var(--border-light)", background: "rgba(0,200,255,0.1)", padding: "6px 14px", borderRadius: 100, fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)" }}>
-          IMPACT
+      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+        <div style={{ display: "inline-block", alignSelf: "flex-start", border: "1px solid var(--border-light)", background: "rgba(0,200,255,0.05)", padding: "6px 14px", borderRadius: 100, fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)" }}>
+          REFERENCE CASE
         </div>
-        <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 48, color: "var(--text-primary)", textAlign: "center", letterSpacing: -1 }}>
-          The Creator-to-Curator<br />Shift in Practice
+        <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 48, color: "var(--text-primary)", letterSpacing: -1, maxWidth: 800 }}>
+          MP Capital Markets:<br />Sovereign AI Enablement Validated
         </h2>
+        <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", maxWidth: 700, lineHeight: 1.6 }}>
+          The SVRN ALPHA framework was developed and validated in close collaboration with MP Capital Markets — our founding investor. The results prove the Three-Pillar Model in practice.
+        </p>
       </div>
 
-      <div style={{ display: "flex", gap: 16, width: "100%" }}>
-        {[
-          {
-            client: "Tier 1 European Bank",
-            quote: `"The transition from Creator to Curator changed how our analysts work. The SaaS IR Dashboard didn't just automate data—it structurally shifted our team's capacity to strategic analysis."`,
-            author: "— Head of Investor Relations"
-          },
-          {
-            client: "Global Asset Manager",
-            quote: `"Bypassing a human checkpoint in their Dispute Resolution Tool is architecturally impossible. This isn't just a feature; it's the load-bearing structure that guarantees our EU AI Act compliance."`,
-            author: "— Chief Compliance Officer"
-          },
-          {
-            client: "Private Equity Firm",
-            quote: `"Their sovereign architecture protected our proprietary knowledge as a competitive moat. When a new open-source model outperformed our incumbent, we switched overnight with zero workflow disruption."`,
-            author: "— Chief Operating Officer"
-          }
-        ].map((proof, i) => (
-          <div key={i} style={{
-            flex: 1, padding: 32, borderRadius: 12,
-            background: `linear-gradient(135deg, var(--card-grad-start) 0%, var(--card-grad-end) 100%)`,
-            border: i === 1 ? "2px solid var(--text-accent)" : "1px solid var(--border-light)",
-            display: "flex", flexDirection: "column", gap: 24
-          }}>
-            <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)" }}>{proof.client}</h3>
-            <p style={{ fontFamily: "var(--font-sans)", fontSize: 15, color: "var(--text-secondary)", lineHeight: 1.5 }}>
-              {proof.quote}
-            </p>
-            <div style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--text-muted)", fontWeight: 500 }}>{proof.author}</div>
+      <div style={{ display: "flex", gap: 48 }}>
+
+        {/* Left Col: Phases */}
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 32 }}>
+          <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 24, color: "var(--text-primary)", margin: 0 }}>The Deployment Approach</h3>
+          <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+            {[
+              { phase: "PHASE 1 : EDUCATION", desc: "Structured AI fluency workshops driving the Creator-to-Curator mindset shift across the entire analyst team." },
+              { phase: "PHASE 2 : PROCESS", desc: "Granular workflow redesign routing routine extractions to AI, embedding Human-in-the-Loop checkpoints by default." },
+              { phase: "PHASE 3 : TECHNOLOGY", desc: "Sovereign, model-agnostic infrastructure deployed locally, ensuring zero data leakage and full AI Act compliance." }
+            ].map((p, i) => (
+              <div key={i} style={{ display: "flex", flexDirection: "column", gap: 8, paddingLeft: 24, borderLeft: "2px solid var(--border-subtle)" }}>
+                <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", fontWeight: 600 }}>{p.phase}</div>
+                <div style={{ fontFamily: "var(--font-sans)", fontSize: 15, color: "var(--text-secondary)", lineHeight: 1.5 }}>{p.desc}</div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+
+        {/* Right Col: Results */}
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 24, background: "var(--card-bg)", border: "1px solid var(--border-light)", padding: 40, borderRadius: 12 }}>
+          <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 24, color: "var(--text-primary)", margin: 0 }}>Validated Results</h3>
+          <p style={{ fontFamily: "var(--font-sans)", fontSize: 15, color: "var(--text-secondary)", lineHeight: 1.6 }}>
+            The capacity flip was achieved: analyst ratios inverted from majority-routine to majority-strategic.
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: 16, marginTop: 16 }}>
+            {[
+              "Capacity Flip Achieved",
+              "Zero Data Leakage",
+              "Measurable Alpha Generation",
+              "Zero Vendor Lock-in",
+              "Full EU Compliance (AI Act, GDPR)"
+            ].map((res, i) => (
+              <div key={i} style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                <div style={{ width: 16, height: 16, borderRadius: "50%", background: "var(--text-accent)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#fff" }} />
+                </div>
+                <div style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-primary)", fontWeight: 500 }}>{res}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
 
     </div>
   </Section>
 );
 
-const FoundingTeam = () => (
+const AcademicFoundations = () => (
   <Section bgCenter="--bg-team-top" bgOuter="--bg-team-bottom" type="linear" padding="100px 120px">
     <div style={{ maxWidth: 1200, width: "100%", display: "flex", flexDirection: "column", gap: 64 }}>
 
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
-        <div style={{ border: "1px solid var(--border-light)", background: "rgba(0,184,255,0.13)", padding: "6px 14px", borderRadius: 100, fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)" }}>
-          TEAM
+        <div style={{ border: "1px solid var(--border-light)", background: "rgba(0,184,255,0.05)", padding: "6px 14px", borderRadius: 100, fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)" }}>
+          ACADEMIC FOUNDATION
         </div>
-        <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 48, color: "var(--text-primary)", textAlign: "center", letterSpacing: -1, width: 800 }}>
-          Where Academic Rigour Meets Capital Markets
+        <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 48, color: "var(--text-primary)", textAlign: "center", letterSpacing: -1, maxWidth: 800 }}>
+          Founded on Academic Rigour. Engineered for Reality.
         </h2>
         <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", textAlign: "center", maxWidth: 700, lineHeight: 1.6 }}>
-          svrn_alpha was founded by Prof. Dr. Tobias Blask — bringing together a team of academics, capital markets practitioners, and AI engineers with a shared conviction: that financial institutions can only truly transform when education, process, roles, and technology move together.
+          After 10+ years of published research on digital transformation, Prof. Dr. Tobias Blask founded SVRN ALPHA to bridge the gap between academic theory and institutional execution.
         </p>
       </div>
 
-      <div style={{ display: "flex", gap: 48, width: "100%", alignItems: "center" }}>
-        <div style={{
-          flex: 1, padding: 40, borderRadius: 12,
-          background: `linear-gradient(135deg, var(--card-grad-start) 0%, var(--card-grad-end) 100%)`,
-          border: "1px solid var(--border-light)", display: "flex", flexDirection: "column", gap: 24
-        }}>
-          <div style={{ display: "flex", gap: 20, alignItems: "center" }}>
-            <div style={{ width: 80, height: 80, borderRadius: "50%", background: "var(--border-subtle)" }} />
-            <div>
-              <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 24, color: "var(--text-primary)", margin: 0 }}>Prof. Dr. Tobias Blask</h3>
-              <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", marginTop: 4 }}>FOUNDER & CHAIRMAN</div>
-            </div>
+      <div style={{ display: "flex", gap: 48, width: "100%", alignItems: "flex-start" }}>
+
+        {/* Core Principles */}
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 24 }}>
+          <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 24, color: "var(--text-primary)", margin: 0 }}>The 5 Core Principles</h3>
+          <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+            {[
+              { num: "01", title: "Education Before Technology", desc: "No technology deployment until organizational readiness is established." },
+              { num: "02", title: "Sovereign Means You Decide", desc: "Model-agnostic per use case. Evaluate US, Chinese, or European. Never locked in." },
+              { num: "03", title: "Human-in-the-Loop Always", desc: "AI assists. Humans decide. Architectural, not a feature toggle." },
+              { num: "04", title: "Evidence Over Claims", desc: "Capacity flip. Measurable alpha. If we can't measure it, we don't claim it." },
+              { num: "05", title: "Compliance by Design", desc: "EU AI Act, MiFID II, MAR built directly into the architecture." }
+            ].map((p, i) => (
+              <div key={i} style={{ display: "flex", gap: 24 }}>
+                <div style={{ fontFamily: "var(--font-mono)", fontSize: 20, color: "var(--border-light)", fontWeight: 300 }}>{p.num}</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 6, paddingTop: 4 }}>
+                  <div style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-primary)", fontWeight: 600 }}>{p.title}</div>
+                  <div style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", lineHeight: 1.5 }}>{p.desc}</div>
+                </div>
+              </div>
+            ))}
           </div>
-          <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6 }}>
-            "We built svrn_alpha because we saw financial institutions buying LLM subscriptions and expecting alpha. True transformation requires a sovereign strategy that re-engineers the institution from Education, to Process, to Technology."
-          </p>
         </div>
 
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 16 }}>
-          {["The Three-Pillar Methodology", "Model-Agnostic Sovereign Architecture", "Architectural Human-in-the-Loop Design"].map((val, i) => (
-            <div key={i} style={{ padding: "20px 0", borderBottom: i < 2 ? "1px solid var(--border-subtle)" : "none" }}>
-              <div style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-primary)", fontWeight: 500 }}>{val}</div>
+        {/* Whitepaper CTA Box */}
+        <div style={{
+          flex: 1, padding: 48, borderRadius: 12,
+          background: `linear-gradient(135deg, var(--card-grad-start) 0%, var(--card-grad-end) 100%)`,
+          border: "1px solid var(--text-accent)", display: "flex", flexDirection: "column", gap: 24
+        }}>
+          <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-accent)", letterSpacing: 1 }}>FOUNDING PAPER</div>
+          <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 32, color: "var(--text-primary)", margin: 0, lineHeight: 1.2 }}>
+            The Three-Pillar Model:<br />A Framework for Sovereign AI
+          </h3>
+          <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6 }}>
+            44 pages of research, methodology, and evidence. Discover why 70% of banking AI initiatives fail, and the architectural shift required to succeed.
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: 16, marginTop: 16 }}>
+            <Button variant="primary" style={{ width: "fit-content" }}>Download the Founding Paper</Button>
+            <div style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--text-muted)", display: "flex", gap: 16 }}>
+              <span>PDF Format</span>
+              <span>•</span>
+              <span>44 pages</span>
+              <span>•</span>
+              <span>No Reg. Required</span>
             </div>
-          ))}
+          </div>
         </div>
+
       </div>
 
     </div>
@@ -618,8 +657,8 @@ export default function App() {
       <CapacityFlip />
       <Capabilities />
       <SovereignArchitecture />
-      <SocialProof />
-      <FoundingTeam />
+      <ReferenceCase />
+      <AcademicFoundations />
       <FinalCTA />
       <Footer />
     </div>
