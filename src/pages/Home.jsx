@@ -13,7 +13,7 @@ export const Hero = () => (
                 </span>
             </div>
 
-            <h1 style={{
+            <h1 className="text-hero-mobile" style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: 72,
                 fontWeight: 400,
@@ -43,7 +43,7 @@ export const Hero = () => (
                 <Button variant="secondary">Download the Founding Paper</Button>
             </div>
 
-            <div style={{ marginTop: 80, width: "100%", display: "flex", gap: 24 }}>
+            <div className="flex-col-mobile gap-mobile-md" style={{ marginTop: 80, width: "100%", display: "flex", gap: 24 }}>
                 {[
                     { title: "PILLAR I", subtitle: "Education", text: "The Creator-to-Curator Shift", desc: "Build strategic fluency before deploying technology. Transform your professionals from content creators to insight curators." },
                     { title: "PILLAR II", subtitle: "Process", text: "The Capacity Flip", desc: "Redesign workflows from first principles. Invert the analyst time allocation from 70% routine to 70% strategic analysis." },
@@ -72,7 +72,7 @@ export const Stats = () => (
         width: "100%", background: "var(--bg-stats)", borderTop: "1px solid var(--border-subtle)", borderBottom: "1px solid var(--border-subtle)",
         display: "flex", justifyContent: "center", padding: "40px 0"
     }}>
-        <div style={{ maxWidth: 1200, width: "100%", display: "flex", justifyContent: "space-between", padding: "0 60px" }}>
+        <div className="home-stats-container" style={{ maxWidth: 1200, width: "100%", display: "flex", justifyContent: "space-between", padding: "0 60px" }}>
             {[
                 { val: "70% → 30%", label: "Capacity Flip (Routine vs. Strategic)" },
                 { val: "100%", label: "EU AI Act Compliant Architecture" },
@@ -99,7 +99,7 @@ export const Problem = () => (
                 </p>
             </div>
 
-            <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
+            <div className="flex-col-mobile" style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
                 {[
                     { title: "The Technology-First Fallacy", desc: "Deploying institutional LLM subscriptions before establishing the 'Creator-to-Curator' mindset inevitably results in low adoption rates. Education must precede technology." },
                     { title: "Unrestructured Workflows", desc: "Layering AI onto legacy processes creates a 'jet engine on a bicycle' scenario. Without deep workflow redesign, the structural Capacity Flip cannot be achieved." },
@@ -131,23 +131,23 @@ export const BudgetInversion = () => (
                     Banks typically allocate 90% of their AI transformation budget to technology and 10% to change management. This allocation is precisely backwards. The Three-Pillar Model corrects this inversion to an optimal 25/30/50 split (first year).
                 </p>
 
-                <div style={{ display: "flex", gap: 32, marginTop: 16 }}>
+                <div className="flex-col-mobile gap-mobile-md" style={{ display: "flex", gap: 32, marginTop: 16 }}>
                     {/* Typical Allocation */}
                     <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 16 }}>
                         <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)", letterSpacing: 1 }}>INDUSTRY STANDARD (70% FAILURE RATE)</div>
-                        <div style={{ display: "flex", height: 48, borderRadius: 8, overflow: "hidden" }}>
-                            <div style={{ width: "90%", background: "var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", fontWeight: 500 }}>Technology (90%)</div>
-                            <div style={{ width: "10%", background: "var(--text-accent)", opacity: 0.5, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }} title="Change Mgmt (10%)">...</div>
+                        <div className="budget-bars" style={{ display: "flex", height: 48, borderRadius: 8, overflow: "hidden" }}>
+                            <div className="budget-bar-item" style={{ width: "90%", background: "var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", fontWeight: 500 }}>Technology (90%)</div>
+                            <div className="budget-bar-item" style={{ width: "10%", background: "var(--text-accent)", opacity: 0.5, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }} title="Change Mgmt (10%)">...</div>
                         </div>
                     </div>
 
                     {/* Optimal Allocation */}
                     <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 16 }}>
                         <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>THE THREE-PILLAR MODEL (OPTIMAL)</div>
-                        <div style={{ display: "flex", height: 48, borderRadius: 8, overflow: "hidden" }}>
-                            <div style={{ flex: 25, background: "var(--text-accent)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }}>Education (25%)</div>
-                            <div style={{ flex: 30, background: "var(--btn-primary-end)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }}>Process (30%)</div>
-                            <div style={{ flex: 50, background: "var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", fontWeight: 500, textAlign: "center", flexDirection: "column", justifyContent: "center" }}>
+                        <div className="budget-bars" style={{ display: "flex", height: 48, borderRadius: 8, overflow: "hidden" }}>
+                            <div className="budget-bar-item" style={{ flex: 25, background: "var(--text-accent)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }}>Education (25%)</div>
+                            <div className="budget-bar-item" style={{ flex: 30, background: "var(--btn-primary-end)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }}>Process (30%)</div>
+                            <div className="budget-bar-item" style={{ flex: 50, background: "var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", fontWeight: 500, textAlign: "center", flexDirection: "column" }}>
                                 <span>Tech (50%)</span>
                                 <span style={{ fontSize: 10, fontWeight: 400, opacity: 0.8 }}>First Year</span>
                             </div>
@@ -178,7 +178,7 @@ export const CapacityFlip = () => (
             <div style={{ background: "var(--card-bg)", borderRadius: 12, border: "1px solid var(--border-light)", overflow: "hidden" }}>
 
                 {/* Table Header */}
-                <div style={{ display: "flex", borderBottom: "1px solid var(--border-subtle)", background: "rgba(0,0,0,0.02)", padding: "20px 32px" }}>
+                <div className="table-header" style={{ display: "flex", borderBottom: "1px solid var(--border-subtle)", background: "rgba(0,0,0,0.02)", padding: "20px 32px" }}>
                     <div style={{ flex: 2, fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)", letterSpacing: 1 }}>TASK CATEGORY</div>
                     <div style={{ flex: 1, fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)", letterSpacing: 1 }}>BEFORE (TYPICAL)</div>
                     <div style={{ flex: 1, fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>AFTER (TARGET)</div>
@@ -192,7 +192,7 @@ export const CapacityFlip = () => (
                     { task: "Cross-referencing", before: "~10% of time", after: "~5% of time", role: "AI-powered with flagged exceptions" },
                     { task: "Strategic analysis & Advisory", before: "~30% of time", after: "~75% of time", role: "Human-led, AI-augmented", highlight: true }
                 ].map((row, i) => (
-                    <div key={i} style={{ display: "flex", borderBottom: i === 3 ? "none" : "1px solid var(--border-subtle)", padding: "24px 32px", background: row.highlight ? "rgba(213,17,79,0.03)" : "transparent" }}>
+                    <div key={i} className="table-row" style={{ display: "flex", borderBottom: i === 3 ? "none" : "1px solid var(--border-subtle)", padding: "24px 32px", background: row.highlight ? "rgba(213,17,79,0.03)" : "transparent" }}>
                         <div style={{ flex: 2, fontFamily: "var(--font-sans)", fontSize: 16, color: row.highlight ? "var(--text-primary)" : "var(--text-secondary)", fontWeight: row.highlight ? 600 : 400 }}>{row.task}</div>
                         <div style={{ flex: 1, fontFamily: "var(--font-mono)", fontSize: 15, color: "var(--text-muted)" }}>{row.before}</div>
                         <div style={{ flex: 1, fontFamily: "var(--font-mono)", fontSize: 15, color: row.highlight ? "var(--text-accent)" : "var(--text-primary)", fontWeight: 600 }}>{row.after}</div>
@@ -206,7 +206,7 @@ export const CapacityFlip = () => (
 );
 
 const DashboardVisualization = () => (
-    <div style={{
+    <div className="dashboard-wrapper" style={{
         width: "100%", height: 460, borderRadius: 16, background: "#0A0D14", border: "1px solid rgb(20, 36, 60)",
         overflow: "hidden", display: "flex", flexDirection: "column", boxShadow: "0 24px 64px rgba(0,0,0,0.4)"
     }}>
@@ -224,10 +224,10 @@ const DashboardVisualization = () => (
         </div>
 
         {/* Main Content Area */}
-        <div style={{ flex: 1, display: "flex" }}>
+        <div className="dashboard-main" style={{ flex: 1, display: "flex" }}>
 
             {/* Sidebar */}
-            <div style={{ width: 220, borderRight: "1px solid rgb(20, 36, 60)", padding: "24px 16px", display: "flex", flexDirection: "column", gap: 24 }}>
+            <div className="dashboard-sidebar" style={{ width: 220, borderRight: "1px solid rgb(20, 36, 60)", padding: "24px 16px", display: "flex", flexDirection: "column", gap: 24 }}>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                     <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "rgb(84, 92, 108)", letterSpacing: 1, paddingLeft: 8 }}>PORTFOLIOS</div>
                     {["European Equities", "Global Tech", "ESG Select", "Fixed Income"].map((p, i) => (
@@ -254,16 +254,16 @@ const DashboardVisualization = () => (
             </div>
 
             {/* Content & Data */}
-            <div style={{ flex: 1, display: "flex", flexDirection: "column", background: "#0F131C" }}>
+            <div className="dashboard-content-area" style={{ flex: 1, display: "flex", flexDirection: "column", background: "#0F131C" }}>
 
                 {/* Stats Row */}
-                <div style={{ display: "flex", borderBottom: "1px solid rgb(20, 36, 60)", padding: "24px" }}>
+                <div className="dashboard-stats" style={{ display: "flex", borderBottom: "1px solid rgb(20, 36, 60)", padding: "24px" }}>
                     {[
                         { label: "AUM (EUR)", val: "€2.4B", tick: "+4.2%" },
                         { label: "YTD Return", val: "12.8%", tick: "+1.5%" },
                         { label: "Active Positions", val: "142", tick: "0" }
                     ].map((stat, i) => (
-                        <div key={i} style={{ flex: 1, borderRight: i === 2 ? "none" : "1px solid rgb(20, 36, 60)", paddingRight: 24, paddingLeft: i === 0 ? 0 : 24, display: "flex", flexDirection: "column", gap: 8 }}>
+                        <div key={i} className="dashboard-stat-item" style={{ flex: 1, borderRight: i === 2 ? "none" : "1px solid rgb(20, 36, 60)", paddingRight: 24, paddingLeft: i === 0 ? 0 : 24, display: "flex", flexDirection: "column", gap: 8 }}>
                             <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "rgb(84, 92, 108)", letterSpacing: 1 }}>{stat.label}</div>
                             <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
                                 <div style={{ fontFamily: "var(--font-sans)", fontSize: 28, color: "#FFF", fontWeight: 500 }}>{stat.val}</div>
@@ -274,7 +274,7 @@ const DashboardVisualization = () => (
                 </div>
 
                 {/* Main View Area */}
-                <div style={{ flex: 1, display: "flex", padding: 24, gap: 24 }}>
+                <div className="dashboard-layout gap-mobile-md" style={{ flex: 1, display: "flex", padding: 24, gap: 24 }}>
 
                     {/* Chart Area */}
                     <div style={{ flex: 2, display: "flex", flexDirection: "column", gap: 16 }}>
@@ -349,7 +349,7 @@ export const Capabilities = () => (
                 <DashboardVisualization />
             </div>
 
-            <div style={{ display: "flex", gap: 16, width: "100%" }}>
+            <div className="flex-col-mobile gap-mobile-md" style={{ display: "flex", gap: 16, width: "100%" }}>
                 {[
                     {
                         title: "SaaS IR Dashboard",
@@ -393,7 +393,7 @@ export const SovereignArchitecture = () => (
                 </p>
             </div>
 
-            <div style={{ display: "flex", gap: 32 }}>
+            <div className="flex-col-mobile gap-mobile-md" style={{ display: "flex", gap: 32 }}>
                 {[
                     { layer: "OUTER LAYER", title: "Model Agnosticism", desc: "Connects to any AI model (US closed, Chinese open, European) via standardized APIs. Zero lock-in guarantees geopolitical resilience." },
                     { layer: "MIDDLE LAYER", title: "Institutional Control", desc: "Orchestration, data pipelines, and architectural Human-in-the-Loop checkpoints owned exclusively by the institution, ensuring full EU AI Act auditability." },
@@ -434,7 +434,7 @@ export const ReferenceCaseFragment = () => (
                 </p>
             </div>
 
-            <div style={{ display: "flex", gap: 48 }}>
+            <div className="flex-col-mobile gap-mobile-md" style={{ display: "flex", gap: 48 }}>
 
                 {/* Left Col: Phases */}
                 <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 32 }}>
@@ -499,7 +499,7 @@ export const AcademicFoundations = () => (
                 </p>
             </div>
 
-            <div style={{ display: "flex", gap: 48, width: "100%", alignItems: "flex-start" }}>
+            <div className="flex-col-mobile gap-mobile-md items-start-mobile" style={{ display: "flex", gap: 48, width: "100%", alignItems: "flex-start" }}>
 
                 {/* Core Principles */}
                 <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 24 }}>
@@ -568,7 +568,7 @@ export const FinalCTA = () => (
                 Discover our scalable SaaS Investor Relations Dashboard and customizable Dispute Resolution products. Built to differentiate and deliver high value.
             </p>
 
-            <div style={{ display: "flex", gap: 16 }}>
+            <div className="flex-col-mobile gap-mobile-sm" style={{ display: "flex", gap: 16 }}>
                 <Button variant="primary">Schedule Consultation</Button>
                 <Button variant="secondary">Contact Partners</Button>
             </div>

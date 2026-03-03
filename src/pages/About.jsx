@@ -19,7 +19,7 @@ export default function About() {
             </Section>
 
             <Section background="var(--bg-primary)" padding="60px 120px 120px">
-                <div style={{ maxWidth: 1000, width: "100%", display: "flex", gap: 64 }}>
+                <div className="flex-col-mobile gap-mobile-lg" style={{ maxWidth: 1000, width: "100%", display: "flex", gap: 64 }}>
 
                     <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 48 }}>
 
@@ -74,7 +74,7 @@ export default function About() {
                                 { num: "04", title: "Evidence Over Claims", desc: "We show results, not adjectives. Capacity flip. Measurable alpha. Validated framework. If we can't measure it, we don't claim it." },
                                 { num: "05", title: "Compliance by Design", desc: "EU AI Act, MiFID II, MAR, GDPR — built into the architecture from day one. Not retrofitted after deployment." }
                             ].map((p, i) => (
-                                <div key={i} style={{ display: "flex", gap: 16 }}>
+                                <div key={i} className="flex-col-mobile gap-mobile-md" style={{ display: "flex", gap: 16 }}>
                                     <div style={{ fontFamily: "var(--font-mono)", fontSize: 20, color: "var(--text-accent)", fontWeight: 300, paddingTop: 2 }}>{p.num}</div>
                                     <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                                         <div style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-primary)", fontWeight: 600 }}>{p.title}</div>

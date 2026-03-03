@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export const Nav = ({ theme, toggleTheme }) => (
-    <nav style={{
+    <nav className="nav-container" style={{
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -24,7 +24,7 @@ export const Nav = ({ theme, toggleTheme }) => (
             </span>
         </Link>
 
-        <div style={{ display: "flex", gap: 40, alignItems: "center" }}>
+        <div className="nav-links" style={{ display: "flex", gap: 40, alignItems: "center" }}>
             <Link to="/whitepaper" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", textDecoration: "none" }}>Whitepaper</Link>
             <Link to="/reference-case" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", textDecoration: "none" }}>Reference Case</Link>
             <Link to="/research" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", textDecoration: "none" }}>Research</Link>
@@ -32,7 +32,7 @@ export const Nav = ({ theme, toggleTheme }) => (
             <Link to="/about" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", textDecoration: "none" }}>About</Link>
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+        <div className="nav-actions" style={{ display: "flex", alignItems: "center", gap: 16 }}>
             <button
                 onClick={toggleTheme}
                 style={{ background: "transparent", color: "var(--text-primary)", fontSize: 20, cursor: "pointer", border: "1px solid var(--border-subtle)", padding: "4px 8px", borderRadius: 4 }}

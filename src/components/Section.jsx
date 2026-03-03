@@ -13,7 +13,7 @@ export const Section = ({ children, bgCenter, bgOuter, background, padding = "10
     }
 
     return (
-        <section style={{
+        <section className="pad-mobile pad-y-mobile" style={{
             background: bgStyle,
             padding: padding,
             width: "100%",

@@ -20,7 +20,7 @@ export default function WhitepaperPage() {
             </Section>
 
             <Section background="var(--bg-primary)" padding="0px 120px 120px">
-                <div style={{ maxWidth: 900, width: "100%", display: "flex", gap: 64 }}>
+                <div className="flex-col-mobile gap-mobile-lg" style={{ maxWidth: 900, width: "100%", display: "flex", gap: 64 }}>
 
                     <div style={{ flex: 2, display: "flex", flexDirection: "column", gap: 32 }}>
                         <h2 style={{ fontFamily: "var(--font-sans)", fontSize: 32, color: "var(--text-primary)", margin: 0 }}>Abstract</h2>
