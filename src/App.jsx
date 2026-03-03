@@ -103,8 +103,8 @@ const Nav = ({ theme, toggleTheme }) => (
     </div>
 
     <div style={{ display: "flex", gap: 40, alignItems: "center" }}>
-      {["Approach", "Solutions", "About"].map(link => (
-        <a key={link} href={`#${link.toLowerCase()}`} style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)" }}>
+      {["The Three Pillars", "Solutions", "Research"].map(link => (
+        <a key={link} href={`#${link.toLowerCase().replace(/\s+/g, '-')}`} style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)" }}>
           {link}
         </a>
       ))}
@@ -143,11 +143,11 @@ const Hero = () => (
       </div>
 
       <h1 style={{ fontFamily: "var(--font-serif)", fontSize: 72, fontWeight: "normal", letterSpacing: -2, color: "var(--text-primary)", textAlign: "center", lineHeight: 1.1, margin: 0 }}>
-        Institutional-Grade AI<br />for Regulated Finance
+        Sovereign AI Enablement<br />for Investment Banking
       </h1>
 
       <p style={{ fontFamily: "var(--font-sans)", fontSize: 19, color: "var(--text-secondary)", textAlign: "center", maxWidth: 720, lineHeight: 1.6, margin: 0 }}>
-        Empowering capital markets with two core scalable solutions: A SaaS AI-powered Investor Relations Dashboard for deep data visualization and a customizable Dispute Resolution Tool.
+        Transforming capital markets through our proprietary Three-Pillar Model. Reclaim your institutional alpha with our SaaS Investor Relations Dashboard and Dispute Resolution tools, built on sovereign, model-agnostic infrastructure.
       </p>
 
       <div style={{ display: "flex", gap: 16 }}>
@@ -175,10 +175,10 @@ const Hero = () => (
 
 const Stats = () => {
   const statItems = [
-    { num: "550K+", lbl: "Company Profiles" },
-    { num: "14×", lbl: "Faster Workflows" },
-    { num: "<2hrs", lbl: "Deal Memo Turnaround", highlight: true },
-    { num: "100%", lbl: "Audit Trail Coverage" }
+    { num: "70% → 30%", lbl: "Routine Task Reduction" },
+    { num: "Zero", lbl: "Vendor Lock-in" },
+    { num: "100%", lbl: "EU AI Act Compliant", highlight: true },
+    { num: "Full", lbl: "Audit Trail Coverage" }
   ];
 
   return (
@@ -205,26 +205,26 @@ const Problem = () => (
           THE GAP
         </div>
         <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 52, color: "var(--text-primary)", textAlign: "center", letterSpacing: -1, maxWidth: 800 }}>
-          Financial institutions are running on borrowed time.
+          The AI Transformation Paradox
         </h2>
         <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", textAlign: "center", maxWidth: 600, lineHeight: 1.6 }}>
-          The window to transform is closing. Competitors who embed AI into their operations today will be structurally unassailable within three years. The question is no longer whether to change — it's whether you can change fast enough.
+          70% of AI initiatives in financial services fail because banks systematically overinvest in technology and underinvest in human readiness. We solve the 90/10 budget inversion.
         </p>
       </div>
 
       <div style={{ display: "flex", gap: 16, width: "100%" }}>
         {[
           {
-            title: "Education Deficit",
-            desc: "Most AI initiatives skip straight to deployment. The shift from Creator to Curator is cognitive, requiring analysts to understand why curating AI-generated outputs lets them focus on alpha generation."
+            title: "The Technology-First Fallacy",
+            desc: "Banks spend 90% of their budget on infrastructure and 10% on change management. Deployment without the cognitive Creator-to-Curator shift guarantees failure."
           },
           {
-            title: "Process Rigidity",
-            desc: "Dropping AI into existing workflows fails because the workflows themselves need restructuring. The typical analyst spends 70% of their time on routine tasks—AI must invert that ratio."
+            title: "Unrestructured Workflows",
+            desc: "Layering AI onto legacy processes creates the 'jet engine on a bicycle' effect. True transformation requires redesigning workflows to achieve the Capacity Flip."
           },
           {
-            title: "Abdicated Leadership",
-            desc: "AI transformation is not an IT project. When the C-suite delegates this to technology departments, it dies. Successful AI deployment requires the CEO or MD to personally own the transformation."
+            title: "The Vendor Lock-in Trap",
+            desc: "Building around a single provider's ecosystem creates unacceptable geopolitical and business risk. Proprietary knowledge must be protected by sovereign architecture."
           }
         ].map((chal, i) => (
           <div key={i} style={{
@@ -251,7 +251,7 @@ const Capabilities = () => (
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
         <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 44, color: "var(--text-primary)", letterSpacing: -1, margin: 0 }}>
-          Platform + FDE for<br />Institutional Transformation
+          Sovereign Products built on<br />The Three-Pillar Model
         </h2>
         <a href="#more" style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-accent)", fontWeight: 500 }}>
           View all capabilities →
@@ -265,7 +265,7 @@ const Capabilities = () => (
         <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 16 }}>
           <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 28, color: "var(--text-primary)" }}>SaaS Investor Relations Dashboard</h3>
           <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6 }}>
-            A super attractive, scalable business model combining deep data visualization with AI chat capabilities. Designed specifically to differentiate your firm from established players like Nastic AR or German Börse Cockpit through a more agile, high-value offering.
+            A scalable solution combining deep data visualization with AI chat capabilities. Deployed on our model-agnostic architecture, it protects your proprietary knowledge as a competitive moat while ensuring full EU regulatory compliance natively.
           </p>
         </div>
         <div style={{ width: 360, height: 200, background: "var(--border-subtle)", borderRadius: 10, border: "1px solid var(--border-light)" }} />
@@ -275,15 +275,15 @@ const Capabilities = () => (
         {[
           {
             title: "Customizable Dispute Resolution",
-            desc: "A specialized tool featuring extensive adjustment options to tailor the dispute resolution process entirely to your institution's specific workflow."
+            desc: "A specialized tool featuring extensive adjustment options. Embeds architectural Human-in-the-Loop (HITL) checkpoints to structurally require professional judgment."
           },
           {
-            title: "Cost-Effective Pricing Models",
-            desc: "Positioned competitively against legacy systems with flexible licensing models."
+            title: "Model-Agnostic Infrastructure",
+            desc: "Evaluate and deploy any LLM per use case. Zero lock-in means your institutional operations continue uninterrupted when the technology landscape shifts."
           },
           {
-            title: "Scalable Value Proposition",
-            desc: "Designed to serve our target market of 20-30 core enterprise customers."
+            title: "The Capacity Flip",
+            desc: "Invert your time allocation from 70% routine to 70% strategic. Free your most expensive talent to focus purely on alpha generation."
           }
         ].map((feature, i) => (
           <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", gap: 12, paddingTop: 16, borderTop: "1px solid var(--border-subtle)" }}>
@@ -308,7 +308,7 @@ const SocialProof = () => (
           IMPACT
         </div>
         <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 48, color: "var(--text-primary)", textAlign: "center", letterSpacing: -1 }}>
-          From Advisory to<br />Embedded Execution
+          The Creator-to-Curator<br />Shift in Practice
         </h2>
       </div>
 
@@ -316,17 +316,17 @@ const SocialProof = () => (
         {[
           {
             client: "Tier 1 European Bank",
-            quote: `"The SaaS Investor Relations Dashboard gave our IR team a completely new level of insight. The AI chat feature combined with real-time data visualization is far superior to legacy systems we previously used."`,
+            quote: `"The transition from Creator to Curator changed how our analysts work. The SaaS IR Dashboard didn't just automate data—it structurally shifted our team's capacity to strategic analysis."`,
             author: "— Head of Investor Relations"
           },
           {
             client: "Global Asset Manager",
-            quote: `"The sophisticated adjustment options within the Dispute Resolution Tool allowed us to perfectly map our internal compliance workflows. It's a highly customizable, low-cost solution that just works."`,
+            quote: `"Bypassing a human checkpoint in their Dispute Resolution Tool is architecturally impossible. This isn't just a feature; it's the load-bearing structure that guarantees our EU AI Act compliance."`,
             author: "— Chief Compliance Officer"
           },
           {
             client: "Private Equity Firm",
-            quote: `"With EU AI Act compliance natively embedded into our model-agnostic infrastructure, we deploy state-of-the-art models without risking data sovereignty or proprietary knowledge."`,
+            quote: `"Their sovereign architecture protected our proprietary knowledge as a competitive moat. When a new open-source model outperformed our incumbent, we switched overnight with zero workflow disruption."`,
             author: "— Chief Operating Officer"
           }
         ].map((proof, i) => (
@@ -379,12 +379,12 @@ const FoundingTeam = () => (
             </div>
           </div>
           <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6 }}>
-            "We built svrn_alpha because we saw financial institutions buying LLM subscriptions and expecting alpha. True transformation requires a sovereign strategy that re-engineers the institution from the inside out."
+            "We built svrn_alpha because we saw financial institutions buying LLM subscriptions and expecting alpha. True transformation requires a sovereign strategy that re-engineers the institution from Education, to Process, to Technology."
           </p>
         </div>
 
         <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 16 }}>
-          {["European Sovereign Architecture", "Capital Markets Domain Expertise", "Academic Research & Validation"].map((val, i) => (
+          {["The Three-Pillar Methodology", "Model-Agnostic Sovereign Architecture", "Architectural Human-in-the-Loop Design"].map((val, i) => (
             <div key={i} style={{ padding: "20px 0", borderBottom: i < 2 ? "1px solid var(--border-subtle)" : "none" }}>
               <div style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-primary)", fontWeight: 500 }}>{val}</div>
             </div>
@@ -429,7 +429,7 @@ const Footer = () => (
       <div style={{ display: "flex", flexDirection: "column", gap: 16, width: 280 }}>
         <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 600, letterSpacing: 2, color: "var(--text-primary)" }}>svrn_alpha</div>
         <p style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-muted)", lineHeight: 1.5 }}>
-          Sovereign AI infrastructure and organizational transformation for regulated finance.
+          Sovereign AI enablement and organizational transformation for investment banking.
         </p>
       </div>
       <div style={{ display: "flex", gap: 60 }}>
