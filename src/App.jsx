@@ -303,7 +303,7 @@ const Capabilities = () => (
             desc: "Evaluate and deploy any LLM per use case. Zero lock-in means your institutional operations continue uninterrupted when the technology landscape shifts."
           },
           {
-            title: "The Capacity Flip",
+            title: "The Capacity Flip Engine",
             desc: "Invert your time allocation from 70% routine to 70% strategic. Free your most expensive talent to focus purely on alpha generation."
           }
         ].map((feature, i) => (
@@ -311,6 +311,129 @@ const Capabilities = () => (
             <h4 style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-primary)", fontWeight: 600 }}>{feature.title}</h4>
             <p style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", lineHeight: 1.5 }}>
               {feature.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </Section>
+);
+
+const BudgetInversion = () => (
+  <Section background="var(--bg-prob)" padding="0 120px 100px">
+    <div style={{ maxWidth: 1000, width: "100%", display: "flex", flexDirection: "column", gap: 48 }}>
+      <div style={{ borderTop: "1px solid var(--border-subtle)", paddingTop: 64, display: "flex", flexDirection: "column", gap: 32 }}>
+        <h3 style={{ fontFamily: "var(--font-serif)", fontSize: 36, color: "var(--text-primary)", letterSpacing: -0.5, margin: 0 }}>
+          The Budget Inversion
+        </h3>
+        <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", lineHeight: 1.6, maxWidth: 800, margin: 0 }}>
+          Banks typically allocate 90% of their AI transformation budget to technology and 10% to change management. This allocation is precisely backwards. The Three-Pillar Model corrects this inversion.
+        </p>
+
+        <div style={{ display: "flex", gap: 32, marginTop: 16 }}>
+          {/* Typical Allocation */}
+          <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 16 }}>
+            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)", letterSpacing: 1 }}>INDUSTRY STANDARD (70% FAILURE RATE)</div>
+            <div style={{ display: "flex", height: 48, borderRadius: 8, overflow: "hidden" }}>
+              <div style={{ width: "90%", background: "var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", fontWeight: 500 }}>Technology (90%)</div>
+              <div style={{ width: "10%", background: "var(--text-accent)", opacity: 0.5, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }} title="Change Mgmt (10%)">...</div>
+            </div>
+          </div>
+
+          {/* Optimal Allocation */}
+          <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 16 }}>
+            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>THE THREE-PILLAR MODEL (OPTIMAL)</div>
+            <div style={{ display: "flex", height: 48, borderRadius: 8, overflow: "hidden" }}>
+              <div style={{ width: "40%", background: "var(--text-accent)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }}>Education (40%)</div>
+              <div style={{ width: "30%", background: "var(--btn-primary-end)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }}>Process (30%)</div>
+              <div style={{ width: "30%", background: "var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", fontWeight: 500 }}>Tech (30%)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Section>
+);
+
+const CapacityFlip = () => (
+  <Section bgCenter="--bg-hero-center" bgOuter="--bg-hero-outer" type="radial" padding="100px 120px">
+    <div style={{ maxWidth: 1200, display: "flex", flexDirection: "column", gap: 64, width: "100%" }}>
+
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
+        <div style={{ background: "transparent", border: "1px solid var(--border-light)", padding: "6px 14px", borderRadius: 100, fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-secondary)" }}>
+          PILLAR II : PROCESS
+        </div>
+        <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 48, color: "var(--text-primary)", textAlign: "center", letterSpacing: -1, maxWidth: 800 }}>
+          The Capacity Flip
+        </h2>
+        <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", textAlign: "center", maxWidth: 700, lineHeight: 1.6 }}>
+          Layering AI onto legacy processes creates a 'jet engine on a bicycle' effect. True transformation requires redesigning workflows from first principles to invert professional time allocation.
+        </p>
+      </div>
+
+      <div style={{ background: "var(--card-bg)", borderRadius: 12, border: "1px solid var(--border-light)", overflow: "hidden" }}>
+
+        {/* Table Header */}
+        <div style={{ display: "flex", borderBottom: "1px solid var(--border-subtle)", background: "rgba(0,0,0,0.02)", padding: "20px 32px" }}>
+          <div style={{ flex: 2, fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)", letterSpacing: 1 }}>TASK CATEGORY</div>
+          <div style={{ flex: 1, fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)", letterSpacing: 1 }}>BEFORE (TYPICAL)</div>
+          <div style={{ flex: 1, fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>AFTER (TARGET)</div>
+          <div style={{ flex: 2, fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)", letterSpacing: 1 }}>AI ROLE</div>
+        </div>
+
+        {/* Table Rows */}
+        {[
+          { task: "Data extraction & Formatting", before: "~40% of time", after: "~10% of time", role: "Automated with human verification" },
+          { task: "Model population", before: "~15% of time", after: "~5% of time", role: "AI-assisted with analyst validation" },
+          { task: "Cross-referencing", before: "~10% of time", after: "~5% of time", role: "AI-powered with flagged exceptions" },
+          { task: "Strategic analysis & Advisory", before: "~30% of time", after: "~75% of time", role: "Human-led, AI-augmented", highlight: true }
+        ].map((row, i) => (
+          <div key={i} style={{ display: "flex", borderBottom: i === 3 ? "none" : "1px solid var(--border-subtle)", padding: "24px 32px", background: row.highlight ? "rgba(0,184,255,0.03)" : "transparent" }}>
+            <div style={{ flex: 2, fontFamily: "var(--font-sans)", fontSize: 16, color: row.highlight ? "var(--text-primary)" : "var(--text-secondary)", fontWeight: row.highlight ? 600 : 400 }}>{row.task}</div>
+            <div style={{ flex: 1, fontFamily: "var(--font-mono)", fontSize: 15, color: "var(--text-muted)" }}>{row.before}</div>
+            <div style={{ flex: 1, fontFamily: "var(--font-mono)", fontSize: 15, color: row.highlight ? "var(--text-accent)" : "var(--text-primary)", fontWeight: 600 }}>{row.after}</div>
+            <div style={{ flex: 2, fontFamily: "var(--font-sans)", fontSize: 15, color: "var(--text-muted)" }}>{row.role}</div>
+          </div>
+        ))}
+
+      </div>
+    </div>
+  </Section>
+);
+
+const SovereignArchitecture = () => (
+  <Section background="var(--bg-stats)" padding="100px 120px">
+    <div style={{ maxWidth: 1200, width: "100%", display: "flex", flexDirection: "column", gap: 64 }}>
+
+      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+        <div style={{ display: "inline-block", alignSelf: "flex-start", border: "1px solid var(--border-light)", padding: "6px 14px", borderRadius: 100, fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)" }}>
+          PILLAR III : TECHNOLOGY
+        </div>
+        <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 48, color: "var(--text-primary)", letterSpacing: -1 }}>
+          The Sovereign Data Fortress
+        </h2>
+        <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", maxWidth: 700, lineHeight: 1.6 }}>
+          Models are interchangeable commodities. Your proprietary knowledge—protected by a model-agnostic architecture—is your only defensible moat.
+        </p>
+      </div>
+
+      <div style={{ display: "flex", gap: 32 }}>
+        {[
+          { layer: "OUTER LAYER", title: "Model Agnosticism", desc: "Connects to any AI model (US closed, Chinese open, European) via standardized APIs. Zero lock-in guarantees geopolitical resilience." },
+          { layer: "MIDDLE LAYER", title: "Institutional Control", desc: "Orchestration, data pipelines, and architectural Human-in-the-Loop checkpoints owned exclusively by the institution, ensuring full EU AI Act auditability." },
+          { layer: "INNER LAYER", title: "Proprietary Knowledge", desc: "The institutional memory, research archives, and client insights that generate alpha. Fully protected from external access." }
+        ].map((block, i) => (
+          <div key={i} style={{
+            flex: 1, padding: 40, borderRadius: 12,
+            background: i === 2 ? "rgba(0,184,255,0.05)" : "var(--card-bg)",
+            border: i === 2 ? "1px solid var(--text-accent)" : "1px solid var(--border-light)",
+            display: "flex", flexDirection: "column", gap: 16
+          }}>
+            <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-accent)", fontWeight: 600, letterSpacing: 1 }}>{block.layer}</div>
+            <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 24, color: "var(--text-primary)", margin: 0 }}>{block.title}</h3>
+            <p style={{ fontFamily: "var(--font-sans)", fontSize: 15, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+              {block.desc}
             </p>
           </div>
         ))}
@@ -491,7 +614,10 @@ export default function App() {
       <Hero />
       <Stats />
       <Problem />
+      <BudgetInversion />
+      <CapacityFlip />
       <Capabilities />
+      <SovereignArchitecture />
       <SocialProof />
       <FoundingTeam />
       <FinalCTA />
