@@ -64,13 +64,16 @@ export default function About() {
                                     <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
                                         <div style={{ width: 64, height: 64, borderRadius: "50%", border: "2px solid var(--border-subtle)", background: "rgba(0,184,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-serif)", fontSize: 24, color: "var(--text-accent)" }}>ED</div>
                                         <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-                                            <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)", fontWeight: 600 }}>Etienne David</div>
-                                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>Title Required</div>
+                                            <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)", fontWeight: 600 }}>Etienne David (PhD)</div>
+                                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>Senior Agentic AI Engineer</div>
                                         </div>
                                     </div>
                                     <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                                        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-muted)", lineHeight: 1.6, margin: 0, fontStyle: "italic" }}>
-                                            [Placeholder: Short biographical sentence or two about Etienne's role and expertise at SVRN ALPHA.]
+                                        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+                                            PhD in Agricultural Sciences (Deep Learning focus) with over 2,700 citations. Architect of agentic AI platforms, MCP servers, and LLM evaluation frameworks.
+                                        </p>
+                                        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+                                            Brings deep expertise in Computer Vision and generative AI, focusing on deploying robust, production-ready AI systems in messy, real-world industrial environments.
                                         </p>
                                     </div>
                                 </div>
