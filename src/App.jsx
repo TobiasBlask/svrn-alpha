@@ -98,7 +98,7 @@ const Nav = ({ theme, toggleTheme }) => (
         background: "linear-gradient(180deg, var(--btn-primary-start) 0%, var(--btn-primary-end) 100%)"
       }} />
       <span style={{ fontFamily: "var(--font-mono)", fontSize: 18, fontWeight: 600, letterSpacing: 4, color: "var(--text-primary)" }}>
-        svrn alpha
+        svrn_alpha
       </span>
     </div>
 
@@ -361,7 +361,7 @@ const FoundingTeam = () => (
           Where Academic Rigour Meets Capital Markets
         </h2>
         <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", textAlign: "center", maxWidth: 700, lineHeight: 1.6 }}>
-          svrn alpha was founded by Prof. Dr. Tobias Blask — bringing together a team of academics, capital markets practitioners, and AI engineers with a shared conviction: that financial institutions can only truly transform when education, process, roles, and technology move together.
+          svrn_alpha was founded by Prof. Dr. Tobias Blask — bringing together a team of academics, capital markets practitioners, and AI engineers with a shared conviction: that financial institutions can only truly transform when education, process, roles, and technology move together.
         </p>
       </div>
 
@@ -379,7 +379,7 @@ const FoundingTeam = () => (
             </div>
           </div>
           <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6 }}>
-            "We built svrn alpha because we saw financial institutions buying LLM subscriptions and expecting alpha. True transformation requires a sovereign strategy that re-engineers the institution from the inside out."
+            "We built svrn_alpha because we saw financial institutions buying LLM subscriptions and expecting alpha. True transformation requires a sovereign strategy that re-engineers the institution from the inside out."
           </p>
         </div>
 
@@ -427,7 +427,7 @@ const Footer = () => (
   <footer style={{ background: "var(--bg-footer)", padding: "60px 120px 40px", display: "flex", flexDirection: "column", gap: 48 }}>
     <div style={{ display: "flex", justifyContent: "space-between", gap: 80 }}>
       <div style={{ display: "flex", flexDirection: "column", gap: 16, width: 280 }}>
-        <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 600, letterSpacing: 2, color: "var(--text-primary)" }}>svrn alpha</div>
+        <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 600, letterSpacing: 2, color: "var(--text-primary)" }}>svrn_alpha</div>
         <p style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-muted)", lineHeight: 1.5 }}>
           Sovereign AI infrastructure and organizational transformation for regulated finance.
         </p>
@@ -452,7 +452,7 @@ const Footer = () => (
 
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
       <div style={{ fontFamily: "var(--font-sans)", fontSize: 12, color: "var(--text-muted)" }}>
-        © 2026 svrn alpha Ltd. All rights reserved. Regulated where applicable.
+        © 2026 svrn_alpha Ltd. All rights reserved. Regulated where applicable.
       </div>
       <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--text-muted)", letterSpacing: 1 }}>
         London · Frankfurt · Amsterdam · Paris
