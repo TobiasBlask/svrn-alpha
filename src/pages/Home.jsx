@@ -189,7 +189,7 @@ export const CapacityFlip = () => (
                     { task: "Cross-referencing", before: "~10% of time", after: "~5% of time", role: "AI-powered with flagged exceptions" },
                     { task: "Strategic analysis & Advisory", before: "~30% of time", after: "~75% of time", role: "Human-led, AI-augmented", highlight: true }
                 ].map((row, i) => (
-                    <div key={i} style={{ display: "flex", borderBottom: i === 3 ? "none" : "1px solid var(--border-subtle)", padding: "24px 32px", background: row.highlight ? "rgba(0,184,255,0.03)" : "transparent" }}>
+                    <div key={i} style={{ display: "flex", borderBottom: i === 3 ? "none" : "1px solid var(--border-subtle)", padding: "24px 32px", background: row.highlight ? "rgba(213,17,79,0.03)" : "transparent" }}>
                         <div style={{ flex: 2, fontFamily: "var(--font-sans)", fontSize: 16, color: row.highlight ? "var(--text-primary)" : "var(--text-secondary)", fontWeight: row.highlight ? 600 : 400 }}>{row.task}</div>
                         <div style={{ flex: 1, fontFamily: "var(--font-mono)", fontSize: 15, color: "var(--text-muted)" }}>{row.before}</div>
                         <div style={{ flex: 1, fontFamily: "var(--font-mono)", fontSize: 15, color: row.highlight ? "var(--text-accent)" : "var(--text-primary)", fontWeight: 600 }}>{row.after}</div>
@@ -204,19 +204,19 @@ export const CapacityFlip = () => (
 
 const DashboardVisualization = () => (
     <div style={{
-        width: "100%", height: 460, borderRadius: 16, background: "#0A0D14", border: "1px solid #1E2532",
+        width: "100%", height: 460, borderRadius: 16, background: "#0A0D14", border: "1px solid rgb(20, 36, 60)",
         overflow: "hidden", display: "flex", flexDirection: "column", boxShadow: "0 24px 64px rgba(0,0,0,0.4)"
     }}>
         {/* Top App Bar */}
-        <div style={{ height: 48, borderBottom: "1px solid #1E2532", display: "flex", alignItems: "center", justifyContent: "space-between", padding: "0 20px" }}>
+        <div style={{ height: 48, borderBottom: "1px solid rgb(20, 36, 60)", display: "flex", alignItems: "center", justifyContent: "space-between", padding: "0 20px" }}>
             <div style={{ display: "flex", gap: 8 }}>
                 <div style={{ width: 12, height: 12, borderRadius: "50%", background: "#FF5F56" }} />
                 <div style={{ width: 12, height: 12, borderRadius: "50%", background: "#FFBD2E" }} />
                 <div style={{ width: 12, height: 12, borderRadius: "50%", background: "#27C93F" }} />
             </div>
-            <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "#6A778D", letterSpacing: 1 }}>SaaS IR Dashboard · Protected Session</div>
-            <div style={{ width: 24, height: 24, borderRadius: "50%", background: "#1E2532", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <div style={{ width: 10, height: 10, borderRadius: "50%", background: "#00B8FF" }} />
+            <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "rgb(84, 92, 108)", letterSpacing: 1 }}>SaaS IR Dashboard · Protected Session</div>
+            <div style={{ width: 24, height: 24, borderRadius: "50%", background: "rgb(20, 36, 60)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <div style={{ width: 10, height: 10, borderRadius: "50%", background: "rgb(213, 17, 79)" }} />
             </div>
         </div>
 
@@ -224,14 +224,14 @@ const DashboardVisualization = () => (
         <div style={{ flex: 1, display: "flex" }}>
 
             {/* Sidebar */}
-            <div style={{ width: 220, borderRight: "1px solid #1E2532", padding: "24px 16px", display: "flex", flexDirection: "column", gap: 24 }}>
+            <div style={{ width: 220, borderRight: "1px solid rgb(20, 36, 60)", padding: "24px 16px", display: "flex", flexDirection: "column", gap: 24 }}>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                    <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "#6A778D", letterSpacing: 1, paddingLeft: 8 }}>PORTFOLIOS</div>
+                    <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "rgb(84, 92, 108)", letterSpacing: 1, paddingLeft: 8 }}>PORTFOLIOS</div>
                     {["European Equities", "Global Tech", "ESG Select", "Fixed Income"].map((p, i) => (
                         <div key={i} style={{
                             padding: "8px 12px", borderRadius: 6, cursor: "pointer",
-                            background: i === 0 ? "rgba(0,184,255,0.1)" : "transparent",
-                            color: i === 0 ? "#FFF" : "#8A99B2",
+                            background: i === 0 ? "rgba(213,17,79,0.1)" : "transparent",
+                            color: i === 0 ? "#FFF" : "rgb(84, 92, 108)",
                             fontFamily: "var(--font-sans)", fontSize: 13, fontWeight: i === 0 ? 500 : 400
                         }}>
                             {p}
@@ -239,12 +239,12 @@ const DashboardVisualization = () => (
                     ))}
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                    <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "#6A778D", letterSpacing: 1, paddingLeft: 8 }}>AI ASSISTANT</div>
-                    <div style={{ padding: "8px 12px", borderRadius: 6, background: "#1E2532", color: "#FFF", fontFamily: "var(--font-sans)", fontSize: 13, display: "flex", alignItems: "center", gap: 8 }}>
-                        <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#00B8FF", boxShadow: "0 0 8px #00B8FF" }} />
+                    <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "rgb(84, 92, 108)", letterSpacing: 1, paddingLeft: 8 }}>AI ASSISTANT</div>
+                    <div style={{ padding: "8px 12px", borderRadius: 6, background: "rgb(20, 36, 60)", color: "#FFF", fontFamily: "var(--font-sans)", fontSize: 13, display: "flex", alignItems: "center", gap: 8 }}>
+                        <div style={{ width: 6, height: 6, borderRadius: "50%", background: "rgb(213, 17, 79)", boxShadow: "0 0 8px rgb(213, 17, 79)" }} />
                         Query Engine
                     </div>
-                    <div style={{ padding: "8px 12px", borderRadius: 6, color: "#8A99B2", fontFamily: "var(--font-sans)", fontSize: 13 }}>
+                    <div style={{ padding: "8px 12px", borderRadius: 6, color: "rgb(84, 92, 108)", fontFamily: "var(--font-sans)", fontSize: 13 }}>
                         Dispute Resolution
                     </div>
                 </div>
@@ -254,17 +254,17 @@ const DashboardVisualization = () => (
             <div style={{ flex: 1, display: "flex", flexDirection: "column", background: "#0F131C" }}>
 
                 {/* Stats Row */}
-                <div style={{ display: "flex", borderBottom: "1px solid #1E2532", padding: "24px" }}>
+                <div style={{ display: "flex", borderBottom: "1px solid rgb(20, 36, 60)", padding: "24px" }}>
                     {[
                         { label: "AUM (EUR)", val: "€2.4B", tick: "+4.2%" },
                         { label: "YTD Return", val: "12.8%", tick: "+1.5%" },
                         { label: "Active Positions", val: "142", tick: "0" }
                     ].map((stat, i) => (
-                        <div key={i} style={{ flex: 1, borderRight: i === 2 ? "none" : "1px solid #1E2532", paddingRight: 24, paddingLeft: i === 0 ? 0 : 24, display: "flex", flexDirection: "column", gap: 8 }}>
-                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "#6A778D", letterSpacing: 1 }}>{stat.label}</div>
+                        <div key={i} style={{ flex: 1, borderRight: i === 2 ? "none" : "1px solid rgb(20, 36, 60)", paddingRight: 24, paddingLeft: i === 0 ? 0 : 24, display: "flex", flexDirection: "column", gap: 8 }}>
+                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "rgb(84, 92, 108)", letterSpacing: 1 }}>{stat.label}</div>
                             <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
                                 <div style={{ fontFamily: "var(--font-sans)", fontSize: 28, color: "#FFF", fontWeight: 500 }}>{stat.val}</div>
-                                <div style={{ fontFamily: "var(--font-sans)", fontSize: 12, color: stat.tick.startsWith("+") ? "#27C93F" : "#6A778D" }}>{stat.tick}</div>
+                                <div style={{ fontFamily: "var(--font-sans)", fontSize: 12, color: stat.tick.startsWith("+") ? "#27C93F" : "rgb(84, 92, 108)" }}>{stat.tick}</div>
                             </div>
                         </div>
                     ))}
@@ -276,25 +276,25 @@ const DashboardVisualization = () => (
                     {/* Chart Area */}
                     <div style={{ flex: 2, display: "flex", flexDirection: "column", gap: 16 }}>
                         <div style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "#FFF", fontWeight: 500 }}>Performance Trajectory vs Benchmark</div>
-                        <div style={{ flex: 1, border: "1px solid #1E2532", borderRadius: 8, background: "#0A0D14", position: "relative", overflow: "hidden" }}>
+                        <div style={{ flex: 1, border: "1px solid rgb(20, 36, 60)", borderRadius: 8, background: "#0A0D14", position: "relative", overflow: "hidden" }}>
                             {/* Abstract Chart Lines */}
                             <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 100 100" style={{ position: "absolute", bottom: 0 }}>
                                 {/* Grid */}
-                                <line x1="0" y1="20" x2="100" y2="20" stroke="#1E2532" strokeWidth="0.5" />
-                                <line x1="0" y1="50" x2="100" y2="50" stroke="#1E2532" strokeWidth="0.5" />
-                                <line x1="0" y1="80" x2="100" y2="80" stroke="#1E2532" strokeWidth="0.5" />
+                                <line x1="0" y1="20" x2="100" y2="20" stroke="rgb(20, 36, 60)" strokeWidth="0.5" />
+                                <line x1="0" y1="50" x2="100" y2="50" stroke="rgb(20, 36, 60)" strokeWidth="0.5" />
+                                <line x1="0" y1="80" x2="100" y2="80" stroke="rgb(20, 36, 60)" strokeWidth="0.5" />
 
                                 {/* Benchmark */}
-                                <polyline points="0,80 20,75 40,60 60,65 80,45 100,50" fill="none" stroke="#6A778D" strokeWidth="1.5" strokeDasharray="2,2" />
+                                <polyline points="0,80 20,75 40,60 60,65 80,45 100,50" fill="none" stroke="rgb(84, 92, 108)" strokeWidth="1.5" strokeDasharray="2,2" />
 
                                 {/* Portfolio */}
-                                <polyline points="0,75 20,60 40,30 60,35 80,15 100,10" fill="none" stroke="#00B8FF" strokeWidth="2.5" />
+                                <polyline points="0,75 20,60 40,30 60,35 80,15 100,10" fill="none" stroke="rgb(213, 17, 79)" strokeWidth="2.5" />
                                 <polygon points="0,100 0,75 20,60 40,30 60,35 80,15 100,10 100,100" fill="url(#grad)" opacity="0.1" />
 
                                 <defs>
                                     <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stopColor="#00B8FF" />
-                                        <stop offset="100%" stopColor="#00B8FF" stopOpacity="0" />
+                                        <stop offset="0%" stopColor="rgb(213, 17, 79)" />
+                                        <stop offset="100%" stopColor="rgb(213, 17, 79)" stopOpacity="0" />
                                     </linearGradient>
                                 </defs>
                             </svg>
@@ -302,22 +302,22 @@ const DashboardVisualization = () => (
                     </div>
 
                     {/* AI Chat Area */}
-                    <div style={{ flex: 1, display: "flex", flexDirection: "column", border: "1px solid #1E2532", borderRadius: 8, background: "#0A0D14", overflow: "hidden" }}>
-                        <div style={{ padding: "12px 16px", borderBottom: "1px solid #1E2532", fontFamily: "var(--font-sans)", fontSize: 13, color: "#FFF", fontWeight: 500, display: "flex", alignItems: "center", gap: 8 }}>
-                            <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#00B8FF" }} />
+                    <div style={{ flex: 1, display: "flex", flexDirection: "column", border: "1px solid rgb(20, 36, 60)", borderRadius: 8, background: "#0A0D14", overflow: "hidden" }}>
+                        <div style={{ padding: "12px 16px", borderBottom: "1px solid rgb(20, 36, 60)", fontFamily: "var(--font-sans)", fontSize: 13, color: "#FFF", fontWeight: 500, display: "flex", alignItems: "center", gap: 8 }}>
+                            <div style={{ width: 8, height: 8, borderRadius: "50%", background: "rgb(213, 17, 79)" }} />
                             Aura Assistant (Sovereign Core)
                         </div>
                         <div style={{ flex: 1, padding: 16, display: "flex", flexDirection: "column", gap: 16, overflowY: "auto" }}>
-                            <div style={{ alignSelf: "flex-end", background: "#1E2532", padding: "10px 14px", borderRadius: "12px 12px 0 12px", fontFamily: "var(--font-sans)", fontSize: 13, color: "#FFF", maxWidth: "85%" }}>
+                            <div style={{ alignSelf: "flex-end", background: "rgb(20, 36, 60)", padding: "10px 14px", borderRadius: "12px 12px 0 12px", fontFamily: "var(--font-sans)", fontSize: 13, color: "#FFF", maxWidth: "85%" }}>
                                 Summarize the Q3 attribution for European Equities.
                             </div>
-                            <div style={{ alignSelf: "flex-start", background: "rgba(0,184,255,0.1)", border: "1px solid rgba(0,184,255,0.2)", padding: "10px 14px", borderRadius: "12px 12px 12px 0", fontFamily: "var(--font-sans)", fontSize: 13, color: "#E0E5F0", maxWidth: "90%", lineHeight: 1.5 }}>
+                            <div style={{ alignSelf: "flex-start", background: "rgba(213,17,79,0.1)", border: "1px solid rgba(213,17,79,0.2)", padding: "10px 14px", borderRadius: "12px 12px 12px 0", fontFamily: "var(--font-sans)", fontSize: 13, color: "#E0E5F0", maxWidth: "90%", lineHeight: 1.5 }}>
                                 The +4.2% outperformance was primarily driven by overweight positioning in Industrials (Siemens, Schneider) and strong stock selection in Financials.
-                                <div style={{ marginTop: 8, padding: "6px 10px", background: "rgba(0,0,0,0.2)", borderRadius: 4, fontFamily: "var(--font-mono)", fontSize: 11, color: "#00B8FF" }}>Source: Q3_Attribution_Internal.pdf</div>
+                                <div style={{ marginTop: 8, padding: "6px 10px", background: "rgba(0,0,0,0.2)", borderRadius: 4, fontFamily: "var(--font-mono)", fontSize: 11, color: "rgb(213, 17, 79)" }}>Source: Q3_Attribution_Internal.pdf</div>
                             </div>
                         </div>
-                        <div style={{ padding: 12, borderTop: "1px solid #1E2532" }}>
-                            <div style={{ width: "100%", padding: "8px 12px", borderRadius: 6, background: "#1E2532", fontFamily: "var(--font-sans)", fontSize: 13, color: "#6A778D" }}>
+                        <div style={{ padding: 12, borderTop: "1px solid rgb(20, 36, 60)" }}>
+                            <div style={{ width: "100%", padding: "8px 12px", borderRadius: 6, background: "rgb(20, 36, 60)", fontFamily: "var(--font-sans)", fontSize: 13, color: "rgb(84, 92, 108)" }}>
                                 Ask a question about the portfolio...
                             </div>
                         </div>
@@ -398,7 +398,7 @@ export const SovereignArchitecture = () => (
                 ].map((block, i) => (
                     <div key={i} style={{
                         flex: 1, padding: 40, borderRadius: 12,
-                        background: i === 2 ? "rgba(0,184,255,0.05)" : "var(--card-bg)",
+                        background: i === 2 ? "rgba(213,17,79,0.05)" : "var(--card-bg)",
                         border: i === 2 ? "1px solid var(--text-accent)" : "1px solid var(--border-light)",
                         display: "flex", flexDirection: "column", gap: 16
                     }}>
@@ -420,7 +420,7 @@ export const ReferenceCaseFragment = () => (
         <div style={{ maxWidth: 1200, width: "100%", display: "flex", flexDirection: "column", gap: 64 }}>
 
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-                <div style={{ display: "inline-block", alignSelf: "flex-start", border: "1px solid var(--border-light)", background: "rgba(0,200,255,0.05)", padding: "6px 14px", borderRadius: 100, fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)" }}>
+                <div style={{ display: "inline-block", alignSelf: "flex-start", border: "1px solid var(--border-light)", background: "rgba(213,17,79,0.05)", padding: "6px 14px", borderRadius: 100, fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)" }}>
                     REFERENCE CASE
                 </div>
                 <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 48, color: "var(--text-primary)", letterSpacing: -1, maxWidth: 800 }}>
