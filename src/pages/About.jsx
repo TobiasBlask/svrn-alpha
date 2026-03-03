@@ -81,12 +81,15 @@ export default function About() {
                                         <div style={{ width: 64, height: 64, borderRadius: "50%", border: "2px solid var(--border-subtle)", background: "rgba(213,17,79,0.1)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-serif)", fontSize: 24, color: "var(--text-accent)" }}>SS</div>
                                         <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
                                             <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)", fontWeight: 600 }}>Sebastian Schmidt</div>
-                                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>Title Required</div>
+                                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>Senior AI Engineer & Lead Data Scientist</div>
                                         </div>
                                     </div>
                                     <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                                        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-muted)", lineHeight: 1.6, margin: 0, fontStyle: "italic" }}>
-                                            [Placeholder: Short biographical sentence or two about Sebastian's role and expertise at SVRN ALPHA.]
+                                        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+                                            M.Sc. Business Analytics from Universität Hamburg. Over 4 years of experience delivering end-to-end Data Science projects, from Data Engineering pipelines to MLOps deployments.
+                                        </p>
+                                        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+                                            Former Lead Data Scientist at Otto Group. Deep expertise in Machine Learning, Deep Learning, and NLP, bridging the gap between advanced technical execution and business-driven value creation.
                                         </p>
                                     </div>
                                 </div>
