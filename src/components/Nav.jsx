@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-export const Nav = () => {
+export const Nav = ({ theme, toggleTheme }) => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const location = useLocation();
@@ -77,6 +77,13 @@ export const Nav = () => {
 
             {/* Desktop Actions */}
             <div className="nav-actions" style={{ display: "flex", alignItems: "center", gap: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                    <span style={{ fontSize: 13, color: "var(--text-muted)", fontFamily: "var(--font-sans)" }}>{theme === 'dark' ? 'Dark' : 'Light'}</span>
+                    <label className="theme-switch" title="Toggle Theme">
+                        <input type="checkbox" checked={theme === "dark"} onChange={toggleTheme} />
+                        <span className="theme-slider"></span>
+                    </label>
+                </div>
                 <a href="#login" className="nav-login" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-secondary)", textDecoration: "none", fontWeight: 500 }}>Login</a>
                 <div className="nav-btn-primary" style={{
                     padding: "10px 24px", borderRadius: 100, cursor: "pointer",
@@ -108,6 +115,19 @@ export const Nav = () => {
                             {link.name}
                         </Link>
                     ))}
+
+                    <div style={{ height: 1, width: "100%", background: "var(--border-subtle)", margin: "16px 0" }} />
+
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                        <span style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)" }}>Theme</span>
+                        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                            <span style={{ fontSize: 14, color: "var(--text-muted)", fontFamily: "var(--font-sans)" }}>{theme === 'dark' ? 'Dark' : 'Light'}</span>
+                            <label className="theme-switch" title="Toggle Theme">
+                                <input type="checkbox" checked={theme === "dark"} onChange={toggleTheme} />
+                                <span className="theme-slider"></span>
+                            </label>
+                        </div>
+                    </div>
 
                     <div style={{ display: "flex", flexDirection: "column", gap: 16, marginTop: 16 }}>
                         <div style={{

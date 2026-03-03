@@ -14,11 +14,19 @@ import Press from "./pages/Press";
 import About from "./pages/About";
 import ArticleGIC from "./pages/ArticleGIC";
 
-// --- Force Dark Theme ---
-const useDarkTheme = () => {
+// --- Theme Toggle Hook ---
+const useTheme = () => {
+  const [theme, setTheme] = useState("dark");
+
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", "dark");
-  }, []);
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === "dark" ? "light" : "dark");
+  };
+
+  return { theme, toggleTheme };
 };
 
 // Scroll to top on route change
@@ -32,13 +40,13 @@ const ScrollToTop = () => {
 
 // --- Main App Component ---
 export default function App() {
-  useDarkTheme();
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <Router>
       <ScrollToTop />
       <div style={{ width: "100%", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-        <Nav />
+        <Nav theme={theme} toggleTheme={toggleTheme} />
         <main style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
