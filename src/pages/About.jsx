@@ -36,21 +36,61 @@ export default function About() {
                             </p>
                         </div>
 
-                        <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-                            <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 32, color: "var(--text-primary)", margin: 0 }}>Founder</h3>
-                            <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-                                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGKORxWDPLBvQ/profile-displayphoto-crop_800_800/B4DZwGC3Y7G4AI-/0/1769627941019?e=1773878400&v=beta&t=woTl7s448ZeU4Wu6-EJBd2dc3bgl5_Ina3qoCQ_v8BE" alt="Prof. Dr. Tobias Blask" style={{ width: 64, height: 64, borderRadius: "50%", border: "2px solid var(--border-subtle)", objectFit: "cover" }} />
-                                <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-                                    <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)", fontWeight: 600 }}>Prof. Dr. Tobias Blask</div>
-                                    <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>Professor, Founder & Chairman</div>
+                        <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
+                            <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 32, color: "var(--text-primary)", margin: 0 }}>Leadership & Team</h3>
+
+                            <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
+                                {/* Founder */}
+                                <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+                                    <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+                                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGKORxWDPLBvQ/profile-displayphoto-crop_800_800/B4DZwGC3Y7G4AI-/0/1769627941019?e=1773878400&v=beta&t=woTl7s448ZeU4Wu6-EJBd2dc3bgl5_Ina3qoCQ_v8BE" alt="Prof. Dr. Tobias Blask" style={{ width: 64, height: 64, borderRadius: "50%", border: "2px solid var(--border-subtle)", objectFit: "cover" }} />
+                                        <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                                            <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)", fontWeight: 600 }}>Prof. Dr. Tobias Blask</div>
+                                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>Professor, Founder & Chairman</div>
+                                        </div>
+                                    </div>
+                                    <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                                        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+                                            Academic researcher turned practitioner. Over a decade of published research on digital transformation in financial institutions, combined with hands-on implementation experience inside European investment banks.
+                                        </p>
+                                        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+                                            The SVRN ALPHA framework was built from real transformation work — not from slide decks.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Etienne David */}
+                                <div style={{ display: "flex", flexDirection: "column", gap: 16, paddingTop: 32, borderTop: "1px solid var(--border-subtle)" }}>
+                                    <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+                                        <div style={{ width: 64, height: 64, borderRadius: "50%", border: "2px solid var(--border-subtle)", background: "rgba(0,184,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-serif)", fontSize: 24, color: "var(--text-accent)" }}>ED</div>
+                                        <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                                            <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)", fontWeight: 600 }}>Etienne David</div>
+                                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>Title Required</div>
+                                        </div>
+                                    </div>
+                                    <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                                        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-muted)", lineHeight: 1.6, margin: 0, fontStyle: "italic" }}>
+                                            [Placeholder: Short biographical sentence or two about Etienne's role and expertise at SVRN ALPHA.]
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Sebastian Schmidt */}
+                                <div style={{ display: "flex", flexDirection: "column", gap: 16, paddingTop: 32, borderTop: "1px solid var(--border-subtle)" }}>
+                                    <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+                                        <div style={{ width: 64, height: 64, borderRadius: "50%", border: "2px solid var(--border-subtle)", background: "rgba(213,17,79,0.1)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-serif)", fontSize: 24, color: "var(--text-accent)" }}>SS</div>
+                                        <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                                            <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-primary)", fontWeight: 600 }}>Sebastian Schmidt</div>
+                                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-accent)", letterSpacing: 1 }}>Title Required</div>
+                                        </div>
+                                    </div>
+                                    <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                                        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-muted)", lineHeight: 1.6, margin: 0, fontStyle: "italic" }}>
+                                            [Placeholder: Short biographical sentence or two about Sebastian's role and expertise at SVRN ALPHA.]
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
-                                Academic researcher turned practitioner. Over a decade of published research on digital transformation in financial institutions, combined with hands-on implementation experience inside European investment banks.
-                            </p>
-                            <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
-                                The SVRN ALPHA framework was built from real transformation work — not from slide decks. The industry needs a partner who understands both the science of AI and the organizational politics of making it stick.
-                            </p>
                         </div>
 
                         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
