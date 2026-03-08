@@ -61,7 +61,7 @@ export const Nav = ({ theme, toggleTheme }) => {
                     background: "linear-gradient(180deg, var(--btn-primary-start) 0%, var(--btn-primary-end) 100%)",
                     boxShadow: "0 2px 8px rgba(213, 17, 79, 0.3)"
                 }} />
-                <span style={{ fontFamily: "var(--font-mono)", fontSize: 18, fontWeight: 600, letterSpacing: 4, color: "var(--text-primary)" }}>
+                <span style={{ fontFamily: "var(--font-mono)", fontSize: 18, fontWeight: 600, letterSpacing: 4, color: scrolled && theme === 'light' ? "#FFF" : "var(--text-primary)" }}>
                     svrn_alpha
                 </span>
             </Link>
