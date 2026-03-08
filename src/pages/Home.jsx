@@ -3,7 +3,7 @@ import { Section } from '../components/Section';
 import { Button } from '../components/Button';
 
 export const Hero = () => (
-    <Section bgCenter="--bg-hero-center" bgOuter="--bg-hero-outer" type="radial" padding="100px 120px 80px">
+    <Section bgCenter="--bg-hero-center" bgOuter="--bg-hero-outer" type="linear" padding="100px 120px 80px">
         <div style={{ maxWidth: 1080, display: "flex", flexDirection: "column", alignItems: "center", gap: 32 }}>
 
             <div style={{ display: "flex", alignItems: "center", gap: 8, background: "rgba(16, 58, 90, 0.25)", padding: "6px 14px", borderRadius: 100, border: "1px solid var(--border-subtle)" }}>
@@ -23,7 +23,7 @@ export const Hero = () => (
                 letterSpacing: -1,
                 margin: 0
             }}>
-                AI-Native Financial Advisory<br />& Execution for the Entire<br />Financial Value Chain
+                AI-Native Advisory & Execution<br />for the Financial Industry.<br />We put you back in the Driver Seat
             </h1>
 
             <p style={{
@@ -160,7 +160,7 @@ export const BudgetInversion = () => (
 );
 
 export const CapacityFlip = () => (
-    <Section bgCenter="--bg-hero-center" bgOuter="--bg-hero-outer" type="radial" padding="100px 120px">
+    <Section bgCenter="--bg-hero-center" bgOuter="--bg-hero-outer" type="linear" padding="100px 120px">
         <div style={{ maxWidth: 1200, display: "flex", flexDirection: "column", gap: 64, width: "100%" }}>
 
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
@@ -244,7 +244,7 @@ const DashboardVisualization = () => (
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                     <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "rgb(84, 92, 108)", letterSpacing: 1, paddingLeft: 8 }}>AI ASSISTANT</div>
                     <div style={{ padding: "8px 12px", borderRadius: 6, background: "rgb(20, 36, 60)", color: "#FFF", fontFamily: "var(--font-sans)", fontSize: 13, display: "flex", alignItems: "center", gap: 8 }}>
-                        <div style={{ width: 6, height: 6, borderRadius: "50%", background: "rgb(213, 17, 79)", boxShadow: "0 0 8px rgb(213, 17, 79)" }} />
+                        <div style={{ width: 6, height: 6, borderRadius: "50%", background: "rgb(213, 17, 79)" }} />
                         Query Engine
                     </div>
                     <div style={{ padding: "8px 12px", borderRadius: 6, color: "rgb(84, 92, 108)", fontFamily: "var(--font-sans)", fontSize: 13 }}>
@@ -555,7 +555,7 @@ export const AcademicFoundations = () => (
 );
 
 export const FinalCTA = () => (
-    <Section bgCenter="--bg-cta-center" bgOuter="--bg-cta-outer" type="radial" padding="100px 120px" style={{ minHeight: 520 }}>
+    <Section bgCenter="--bg-cta-center" bgOuter="--bg-cta-outer" type="linear" padding="100px 120px" style={{ minHeight: 520 }}>
         <div style={{ maxWidth: 900, display: "flex", flexDirection: "column", alignItems: "center", gap: 32 }}>
 
             <div style={{ width: 1, height: 80, background: "linear-gradient(180deg, transparent 0%, var(--btn-primary-start) 50%, transparent 100%)" }} />

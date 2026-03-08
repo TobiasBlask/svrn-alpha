@@ -59,7 +59,7 @@ export const Nav = ({ theme, toggleTheme }) => {
                 <div style={{
                     width: 28, height: 28, borderRadius: 6,
                     background: "linear-gradient(180deg, var(--btn-primary-start) 0%, var(--btn-primary-end) 100%)",
-                    boxShadow: "0 2px 8px rgba(213, 17, 79, 0.3)"
+                    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)"
                 }} />
                 <span style={{ fontFamily: "var(--font-mono)", fontSize: 18, fontWeight: 600, letterSpacing: 4, color: scrolled && theme === 'light' ? "#FFF" : "var(--text-primary)" }}>
                     svrn_alpha
@@ -89,7 +89,7 @@ export const Nav = ({ theme, toggleTheme }) => {
                     padding: "10px 24px", borderRadius: 100, cursor: "pointer",
                     background: "linear-gradient(90deg, var(--btn-primary-start) 0%, var(--btn-primary-end) 100%)",
                     color: "#FFF", fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 500,
-                    boxShadow: "0 4px 12px rgba(213, 17, 79, 0.25)",
+                    boxShadow: "0 4px 12px rgba(37, 99, 235, 0.25)",
                     transition: "all 0.3s ease"
                 }}>
                     Get Started
