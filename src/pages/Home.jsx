@@ -23,7 +23,7 @@ export const Hero = () => (
                 letterSpacing: -1,
                 margin: 0
             }}>
-                AI-Native Financial Advisory<br />& Execution for Investment<br />Banking
+                AI-Native Financial Advisory<br />& Execution for the Entire<br />Financial Value Chain
             </h1>
 
             <p style={{
