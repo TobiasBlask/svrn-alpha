@@ -32,7 +32,7 @@ export default function About() {
                                 The academic literature was unambiguous: the primary determinant of transformation success wasn't technological capability. It was organizational readiness — how people thought about AI, how workflows adapted, how leadership committed to the change. Yet the industry continued to allocate 90% of its AI budget to technology and 10% to the organizational factors that actually determined success.
                             </p>
                             <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
-                                In 2025, Prof. Dr. Blask stopped writing papers about the problem and founded SVRN ALPHA to fix it. The company bridges the gap between what research proves and what practice requires — bringing academic rigor to the messy, political, deeply human work of organizational transformation.
+                                In 2025, Prof. Dr. Blask stopped writing papers about the problem and founded SVRN ALPHA to fix it. We don't just sell software to banks; we function as an AI-native financial advisory service. We autonomously run the heavy-lifting quantitative and extraction workflows (the intelligence), enabling your team to focus exclusively on generating and acting on pure alpha (the judgment).
                             </p>
                         </div>
 
@@ -118,7 +118,7 @@ export default function About() {
                         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
                             {[
                                 { num: "01", title: "Education Before Technology", desc: "We never deploy technology until the organizational readiness is in place. The order is the methodology." },
-                                { num: "02", title: "Sovereign Means You Decide", desc: "Model-agnostic architecture. Per use case, we evaluate US closed-source, Chinese open-source, or European models. You choose. You switch. You're never locked in. EU compliance is a byproduct, not the pitch." },
+                                { num: "02", title: "Encode Proprietary Judgment", desc: "We don't provide cookie-cutter templates. We encode your unique financial judgment and subjective expertise directly into the AI layer, compounding your institutional DNA." },
                                 { num: "03", title: "Human-in-the-Loop Always", desc: "AI assists. Humans decide. Every critical juncture has a human checkpoint. This is architecture, not a feature toggle." },
                                 { num: "04", title: "Evidence Over Claims", desc: "We show results, not adjectives. Capacity flip. Measurable alpha. Validated framework. If we can't measure it, we don't claim it." },
                                 { num: "05", title: "Compliance by Design", desc: "EU AI Act, MiFID II, MAR, GDPR — built into the architecture from day one. Not retrofitted after deployment." }

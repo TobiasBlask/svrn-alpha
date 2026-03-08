@@ -23,7 +23,7 @@ export const Hero = () => (
                 letterSpacing: -1,
                 margin: 0
             }}>
-                Sovereign AI Enablement<br />for Investment Banking<br />and the Financial Industry
+                AI-Native Financial Advisory<br />& Execution for Investment<br />Banking
             </h1>
 
             <p style={{
@@ -35,7 +35,7 @@ export const Hero = () => (
                 lineHeight: 1.5,
                 margin: 0
             }}>
-                We bridge the gap between academic research and capital markets execution. Adopting AI isn't about deploying technology—it's about fundamentally restructuring your institution through the Three-Pillar Model.
+                We bridge the gap between academic research and capital markets execution. We don't just deploy technology—we provide an AI-native financial service that autonomously handles the intelligence layer, so your institution can focus exclusively on proprietary judgment and generating alpha.
             </p>
 
             <div style={{ display: "flex", gap: 16, marginTop: 16 }}>
@@ -187,10 +187,10 @@ export const CapacityFlip = () => (
 
                 {/* Table Rows */}
                 {[
-                    { task: "Data extraction & Formatting", before: "~40% of time", after: "~10% of time", role: "Automated with human verification" },
-                    { task: "Model population", before: "~15% of time", after: "~5% of time", role: "AI-assisted with analyst validation" },
-                    { task: "Cross-referencing", before: "~10% of time", after: "~5% of time", role: "AI-powered with flagged exceptions" },
-                    { task: "Strategic analysis & Advisory", before: "~30% of time", after: "~75% of time", role: "Human-led, AI-augmented", highlight: true }
+                    { task: "Data extraction & Formatting", before: "~40% of time", after: "~10% of time", role: "Autonomously handled by SVRN ALPHA service" },
+                    { task: "Model population", before: "~15% of time", after: "~5% of time", role: "Autonomously mapped by SVRN ALPHA service" },
+                    { task: "Cross-referencing", before: "~10% of time", after: "~5% of time", role: "Autonomously cross-referenced with human validation" },
+                    { task: "Strategic analysis & Advisory", before: "~30% of time", after: "~75% of time", role: "Human-led, applying proprietary institutional judgment", highlight: true }
                 ].map((row, i) => (
                     <div key={i} className="table-row" style={{ display: "flex", borderBottom: i === 3 ? "none" : "1px solid var(--border-subtle)", padding: "24px 32px", background: row.highlight ? "rgba(213,17,79,0.03)" : "transparent" }}>
                         <div style={{ flex: 2, fontFamily: "var(--font-sans)", fontSize: 16, color: row.highlight ? "var(--text-primary)" : "var(--text-secondary)", fontWeight: row.highlight ? 600 : 400 }}>{row.task}</div>
@@ -338,10 +338,10 @@ export const Capabilities = () => (
         <div style={{ maxWidth: 1200, width: "100%", display: "flex", flexDirection: "column", gap: 64 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
                 <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 48, color: "var(--text-primary)", letterSpacing: -1, maxWidth: 600 }}>
-                    Sovereign Products<br />Built on the Foundation.
+                    AI-Native Financial Services<br />Built on the Foundation.
                 </h2>
                 <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", maxWidth: 400, textAlign: "right" }}>
-                    Once the Three Pillars are established, we deploy scalable applications tailored for regulated capital markets.
+                    We do not just provide tools. We provide the outcome. SVRN ALPHA autonomously handles the intelligence layer, letting your team focus on judgment.
                 </p>
             </div>
 
@@ -352,16 +352,16 @@ export const Capabilities = () => (
             <div className="flex-col-mobile gap-mobile-md" style={{ display: "flex", gap: 16, width: "100%" }}>
                 {[
                     {
-                        title: "SaaS IR Dashboard",
-                        desc: "A highly attractive Investor Relations interface combining real-time data visualization with AI chat. Low-cost scaling designed to outperform established peers."
+                        title: "AI-Native IR Service",
+                        desc: "We don't just provide a dashboard; we autonomously generate quarterly earnings narratives, competitive peer tear-downs, and LP updates using your encoded proprietary judgment."
                     },
                     {
-                        title: "Customizable Dispute Resolution",
-                        desc: "A specialized tool featuring extensive adjustment options. Embeds architectural Human-in-the-Loop (HITL) checkpoints to structurally require professional judgment."
+                        title: "Specialized Dispute Resolution",
+                        desc: "From complex M&A earn-outs to covenant breaches, we autonomously map claims against credit agreements to provide first-pass dispute analysis, leaving strategic negotiation to your bankers."
                     },
                     {
                         title: "Model-Agnostic Infrastructure",
-                        desc: "Evaluate and deploy any LLM per use case. Zero lock-in means your institutional operations continue uninterrupted when the technology landscape shifts."
+                        desc: "Evaluate and deploy any LLM per use case. We structurally encode your institutional DNA into the AI layer, ensuring your proprietary knowledge compounds as a permanent moat."
                     }
                 ].map((feature, i) => (
                     <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", gap: 12, paddingTop: 16, borderTop: "1px solid var(--border-subtle)" }}>
@@ -565,7 +565,7 @@ export const FinalCTA = () => (
             </h2>
 
             <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", textAlign: "center", maxWidth: 560, lineHeight: 1.6 }}>
-                Discover our scalable SaaS Investor Relations Dashboard and customizable Dispute Resolution products. Built to differentiate and deliver high value.
+                Discover our AI-native Investor Relations and Dispute Resolution services. We execute the intelligence loop, so you can execute the trade.
             </p>
 
             <div className="flex-col-mobile gap-mobile-sm" style={{ display: "flex", gap: 16 }}>

@@ -10,10 +10,10 @@ export default function ReferenceCasePage() {
                         REFERENCE CASE
                     </div>
                     <h1 style={{ fontFamily: "var(--font-serif)", fontSize: 56, color: "var(--text-primary)", letterSpacing: -1, margin: 0 }}>
-                        MP Capital Markets:<br />Sovereign AI Enablement Validated
+                        MP Capital Markets:<br />AI-Native Service Validated
                     </h1>
                     <p style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
-                        How a sovereign AI deployment approach was validated at a European investment bank backed by Münchmeier Petersen.
+                        How an AI-native financial service approach structurally shifted a European investment bank (backed by Münchmeier Petersen) from creating reports to curating alpha.
                     </p>
                 </div>
             </Section>
@@ -30,7 +30,7 @@ export default function ReferenceCasePage() {
                             MPCM operates a research team of experienced analysts whose deep sector expertise is their primary differentiator. Like most investment banks, their analysts were spending the majority of their working hours on routine tasks: data extraction from financial terminals, report formatting to house style, model updates with new quarterly figures, cross-referencing regulatory filings. Only a fraction of their capacity went toward the strategic analysis, client advisory, and insight generation that actually drives revenue.
                         </p>
                         <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
-                            Previous attempts to address this had followed the standard playbook: license an AI platform, hire a data scientist, build some automations. The tools worked. Adoption didn't. Multiple initiative cycles had stalled, each time because the organizational side — the people, the processes, the mindset — hadn't been addressed.
+                            Previous attempts to address this had followed the standard playbook: license an AI platform, hire a data scientist, build some automations. The tools worked. Adoption didn't. They were buying tools when they actually needed the outcome. By partnering with SVRN ALPHA, MPCM structurally outsourced the "intelligence" layer—the heavy extraction and formatting—so their analysts could focus entirely on "judgment."
                         </p>
                     </div>
 
@@ -75,7 +75,7 @@ export default function ReferenceCasePage() {
 
                     <div style={{ padding: 48, borderRadius: 12, border: "1px solid var(--border-light)", background: "var(--card-bg)", display: "flex", flexDirection: "column", gap: 24 }}>
                         <p style={{ fontFamily: "var(--font-serif)", fontSize: 24, color: "var(--text-primary)", fontStyle: "italic", lineHeight: 1.4, margin: 0 }}>
-                            "SVRN ALPHA didn't just give us tools. They gave us a sovereign capability. Our analysts think differently, our workflows are fundamentally restructured, and our proprietary knowledge compounds in infrastructure we own. That's not a vendor relationship — it's an institutional advantage."
+                            "SVRN ALPHA didn't just give us tools. They provided an autonomous engine for our routine intelligence work. Our analysts think differently, our workflows are fundamentally restructured, and our proprietary judgment compounds in infrastructure we own. That's not a vendor relationship — it's an institutional advantage."
                         </p>
                         <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)", letterSpacing: 1 }}>
                             — Ebrahim Attarzadeh, CEO Münchmeyer Petersen Capital Markets
