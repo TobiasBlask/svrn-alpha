@@ -124,6 +124,9 @@ export const BudgetInversion = () => (
     <Section background="var(--bg-prob)" padding="100px 120px">
         <div style={{ maxWidth: 1000, width: "100%", display: "flex", flexDirection: "column", gap: 48 }}>
             <div style={{ borderTop: "1px solid var(--border-subtle)", paddingTop: 64, display: "flex", flexDirection: "column", gap: 32 }}>
+                <div style={{ display: "inline-block", alignSelf: "flex-start", border: "1px solid var(--border-light)", padding: "6px 14px", borderRadius: 100, fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)", marginBottom: -16 }}>
+                    PILLAR I : EDUCATION
+                </div>
                 <h3 style={{ fontFamily: "var(--font-serif)", fontSize: 36, color: "var(--text-primary)", letterSpacing: -0.5, margin: 0 }}>
                     The Budget Inversion
                 </h3>
@@ -622,10 +625,10 @@ export default function Home() {
             <Stats />
             <Problem />
             <BudgetInversion />
-            <BuiltForShipping />
             <CapacityFlip />
-            <Capabilities />
             <SovereignArchitecture />
+            <BuiltForShipping />
+            <Capabilities />
             <ReferenceCaseFragment />
             <AcademicFoundations />
             <FinalCTA />
