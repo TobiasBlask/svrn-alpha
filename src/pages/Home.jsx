@@ -23,7 +23,7 @@ export const Hero = () => (
                 letterSpacing: -1,
                 margin: 0
             }}>
-                AI-Native Advisory & Execution<br />for the Financial Industry.<br />We put you back in the Driver Seat
+                Your 24/7 autonomous<br />research team.<br />Always analyzing.
             </h1>
 
             <p style={{
@@ -35,7 +35,7 @@ export const Hero = () => (
                 lineHeight: 1.5,
                 margin: 0
             }}>
-                We bridge the gap between academic research and capital markets execution. We don't just deploy technology—we provide an AI-native financial service that autonomously handles the intelligence layer, so your institution can focus exclusively on proprietary judgment and generating alpha.
+                We deploy a syndicate of specialized AI agents — Data Gatherers, Modelers, Formatters, and Compliance Checkers — directly on your sovereign infrastructure. An elite, autonomous investment banking team that never sleeps.
             </p>
 
             <div style={{ display: "flex", gap: 16, marginTop: 16 }}>
