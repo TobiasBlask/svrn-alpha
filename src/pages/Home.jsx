@@ -23,7 +23,7 @@ export const Hero = () => (
                 letterSpacing: -1,
                 margin: 0
             }}>
-                Your 24/7 autonomous<br />research team.<br />Always analyzing.
+                We ship the AI<br />Operating System for<br />Institutional Finance.
             </h1>
 
             <p style={{
@@ -35,7 +35,7 @@ export const Hero = () => (
                 lineHeight: 1.5,
                 margin: 0
             }}>
-                We deploy a syndicate of specialized AI agents — Data Gatherers, Modelers, Formatters, and Compliance Checkers — directly on your sovereign infrastructure. An elite, autonomous investment banking team that never sleeps.
+                Stop building chatbots. We develop, deploy, and ship the sovereign technological foundation for the Age of AI — across your entire value chain. Built for alpha generation. Engineered to ship.
             </p>
 
             <div style={{ display: "flex", gap: 16, marginTop: 16 }}>
