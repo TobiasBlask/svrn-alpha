@@ -38,10 +38,7 @@ export const Hero = () => (
                 Stop building chatbots. We develop, deploy, and ship the sovereign technological foundation for the Age of AI — across your entire value chain. Built for alpha generation. Engineered to ship.
             </p>
 
-            <div style={{ display: "flex", gap: 16, marginTop: 16 }}>
-                <Button variant="primary">Explore the Architecture</Button>
-                <Button variant="secondary">Download the Founding Paper</Button>
-            </div>
+
 
             <div className="flex-col-mobile gap-mobile-md" style={{ marginTop: 80, width: "100%", display: "flex", gap: 24 }}>
                 {[

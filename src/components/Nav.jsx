@@ -31,6 +31,7 @@ export const Nav = ({ theme, toggleTheme }) => {
     }, [mobileMenuOpen]);
 
     const navLinks = [
+        { name: "Home", path: "/" },
         { name: "About", path: "/about" }
     ];
 
