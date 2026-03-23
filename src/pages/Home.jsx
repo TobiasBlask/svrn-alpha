@@ -372,10 +372,10 @@ export const Capabilities = () => (
         <div style={{ maxWidth: 1200, width: "100%", display: "flex", flexDirection: "column", gap: 64 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
                 <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 48, color: "var(--text-primary)", letterSpacing: -1, maxWidth: 600 }}>
-                    AI-Native Financial Services<br />Built on the Foundation.
+                    Case Studies:<br />What We Are Building.
                 </h2>
                 <p style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-secondary)", maxWidth: 400, textAlign: "right" }}>
-                    We do not just provide tools. We provide the outcome. SVRN ALPHA autonomously handles the intelligence layer, letting your team focus on judgment.
+                    We do not build theoretical AI. We engineer sovereign infrastructure that drives measurable outcomes. Here are the core applications we are currently deploying with our institutional partners.
                 </p>
             </div>
 
@@ -387,15 +387,15 @@ export const Capabilities = () => (
                 {[
                     {
                         title: "AI-Native IR Service",
-                        desc: "We don't just provide a dashboard; we autonomously generate quarterly earnings narratives, competitive peer tear-downs, and LP updates using your encoded proprietary judgment."
+                        desc: "Currently deploying a system that autonomously generates quarterly earnings narratives, competitive peer tear-downs, and LP updates. Impact: Drastically reduces routine drafting time, enabling teams to focus entirely on judgment and strategic alignment."
                     },
                     {
                         title: "Specialized Dispute Resolution",
-                        desc: "From complex M&A earn-outs to covenant breaches, we autonomously map claims against credit agreements to provide first-pass dispute analysis, leaving strategic negotiation to your bankers."
+                        desc: "Developing autonomous mapping of claims against complex credit agreements, covering M&A earn-outs and covenant breaches. Impact: Provides immediate first-pass dispute analysis, giving banking teams a decisive informational advantage entering negotiations."
                     },
                     {
-                        title: "Model-Agnostic Infrastructure",
-                        desc: "Evaluate and deploy any LLM per use case. We structurally encode your institutional DNA into the AI layer, ensuring your proprietary knowledge compounds as a permanent moat."
+                        title: "Sovereign Institutional Memory",
+                        desc: "Engineering the structural encoding of proprietary firm knowledge into the core AI layer with model-agnostic deployment. Impact: Secures institutional DNA against vendor lock-in and compounds proprietary knowledge into a permanent competitive moat."
                     }
                 ].map((feature, i) => (
                     <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", gap: 12, paddingTop: 16, borderTop: "1px solid var(--border-subtle)" }}>
