@@ -205,6 +205,40 @@ export const CapacityFlip = () => (
     </Section>
 );
 
+export const BuiltForShipping = () => (
+    <Section background="var(--bg-stats)" padding="100px 120px" borderTop="1px solid var(--border-subtle)">
+        <div style={{ maxWidth: 1200, width: "100%", display: "flex", flexDirection: "column", gap: 64 }}>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 16 }}>
+                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: 48, color: "var(--text-primary)", letterSpacing: -1 }}>
+                    Built for Shipping.
+                </h2>
+                <p style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-secondary)", maxWidth: 700, lineHeight: 1.5 }}>
+                    Everything your institution needs to go from strategic brief to executed alpha — autonomously, securely, and at scale.
+                </p>
+            </div>
+
+            <div className="flex-col-mobile" style={{ display: "flex", flexWrap: "wrap", gap: 32 }}>
+                {[
+                    { title: "Watch the OS work in real time", desc: "Live dashboard tracking data ingestion, model processing, and compliance review." },
+                    { title: "Ship while you sleep", desc: "Set a mandate on Friday. The AI Operating System runs the financials over the weekend. Review the draft on Monday." },
+                    { title: "Ship in half the time", desc: "Parallel processing. The fast local model extracts data while the frontier model synthesizes the narrative. Zero bottlenecks." },
+                    { title: "Your infrastructure. Your data.", desc: "The OS lives securely inside your sovereign firewall. No vendor lock-in. Your alpha stays yours." }
+                ].map((item, i) => (
+                    <div key={i} style={{ flex: "1 1 45%", display: "flex", flexDirection: "column", gap: 12 }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                            <div style={{ width: 8, height: 8, borderRadius: "50%", background: "var(--text-accent)" }} />
+                            <h4 style={{ fontFamily: "var(--font-sans)", fontSize: 18, color: "var(--text-primary)", fontWeight: 600, margin: 0 }}>{item.title}</h4>
+                        </div>
+                        <p style={{ fontFamily: "var(--font-sans)", fontSize: 16, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0, paddingLeft: 20 }}>
+                            {item.desc}
+                        </p>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </Section>
+);
+
 const DashboardVisualization = () => (
     <div className="dashboard-wrapper" style={{
         width: "100%", height: 460, borderRadius: 16, background: "#0A0D14", border: "1px solid rgb(20, 36, 60)",
@@ -588,6 +622,7 @@ export default function Home() {
             <Stats />
             <Problem />
             <BudgetInversion />
+            <BuiltForShipping />
             <CapacityFlip />
             <Capabilities />
             <SovereignArchitecture />
