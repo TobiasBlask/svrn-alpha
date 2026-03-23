@@ -23,6 +23,22 @@ export const Footer = () => (
                     <Link to="/research" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-muted)", textDecoration: "none" }}>Research</Link>
                     <Link to="/press" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-muted)", textDecoration: "none" }}>Press</Link>
                 </div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                    <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)", fontWeight: 600, letterSpacing: 1, marginBottom: 8 }}>CONTACT & IMPRESSUM</div>
+                    <div style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--text-muted)", lineHeight: 1.6 }}>
+                        <strong>svrn alpha GmbH</strong><br />
+                        Palmaille 71<br />
+                        22767 Hamburg
+                    </div>
+                    <div style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--text-muted)", lineHeight: 1.6 }}>
+                        Tel.: +49 40 380 22-1000<br />
+                        hello@svrn-alpha.com
+                    </div>
+                    <div style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--text-muted)", lineHeight: 1.6 }}>
+                        Geschäftsführung:<br />
+                        Thorsten Rehmeyer
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -30,10 +46,10 @@ export const Footer = () => (
 
         <div className="footer-bottom" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ fontFamily: "var(--font-sans)", fontSize: 12, color: "var(--text-muted)" }}>
-                © 2026 svrn_alpha Ltd. All rights reserved. Regulated where applicable.
+                © 2026 svrn alpha GmbH. All rights reserved.
             </div>
             <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--text-muted)", letterSpacing: 1 }}>
-                London · Frankfurt · Amsterdam · Paris
+                Hamburg & Frankfurt
             </div>
         </div>
     </footer>
