@@ -57,24 +57,27 @@ export default function Research() {
                     />
 
                     <ArticleCard
-                        badge="// M_01 · HUMAN_LAYER"
-                        title="Why 70% of AI Initiatives in Banking Fail — and It's Not the Technology"
+                        badge="// M_01 · THE_OS_LAYER"
+                        title="Stop Prompting. Start Shipping the OS."
                         date="February 7, 2026 · 8 min read"
-                        desc="The industry-wide failure rate for AI transformation in financial services sits around 70%. Here's what a decade of academic research teaches us: the cause is almost never the technology."
+                        desc="70% of AI initiatives in investment banking fail because banks buy discrete tools. They need to ship a unified AI Operating System across their value chain."
+                        internalRoute="/research/os"
                     />
 
                     <ArticleCard
-                        badge="// M_01 · CAPACITY_FLIP"
-                        title="From Creator to Curator: The Capacity Flip That Changes Everything"
+                        badge="// M_02 · SOVEREIGN_ENABLEMENT"
+                        title="Sovereign Enablement: Owning the Engine for Alpha"
                         date="February 5, 2026 · 7 min read"
-                        desc="The traditional analyst is a Creator. The AI-enabled analyst is a Curator. How redefining workflows inverts the analyst capacity ratio from 70% routine to 70% strategic."
+                        desc="In the Age of AI, renting your intelligence layer from a single vendor is a strategic vulnerability. Sovereign Enablement means owning your AI Operating System."
+                        internalRoute="/research/sovereign"
                     />
 
                     <ArticleCard
-                        badge="// M_03 · INFRA_LAYER"
-                        title="Your Data Moat Is the Only Alpha Left — and Sovereignty Is How You Protect It"
+                        badge="// M_03 · CAPACITY_FLIP"
+                        title="The Capacity Flip: Running on the AI OS"
                         date="February 3, 2026 · 7 min read"
-                        desc="Models are interchangeable commodities. Your proprietary knowledge—protected by a model-agnostic architecture—is your only defensible moat."
+                        desc="How shipping an AI OS inverts analyst workflow, driving the capacity flip from 70% routine to 70% strategic work."
+                        internalRoute="/research/capacity"
                     />
 
                 </div>
