@@ -12,16 +12,8 @@ export const Footer = () => (
             </div>
             <div className="footer-links" style={{ display: "flex", gap: 60 }}>
                 <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                    <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)", fontWeight: 600, letterSpacing: 1, marginBottom: 8 }}>PLATFORM</div>
-                    <Link to="/whitepaper" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-muted)", textDecoration: "none" }}>Architecture</Link>
-                    <Link to="/whitepaper" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-muted)", textDecoration: "none" }}>Compliance</Link>
-                    <Link to="/reference-case" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-muted)", textDecoration: "none" }}>Reference Case</Link>
-                </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                     <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)", fontWeight: 600, letterSpacing: 1, marginBottom: 8 }}>COMPANY</div>
                     <Link to="/about" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-muted)", textDecoration: "none" }}>About</Link>
-                    <Link to="/research" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-muted)", textDecoration: "none" }}>Research</Link>
-                    <Link to="/press" style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text-muted)", textDecoration: "none" }}>Press</Link>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                     <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-primary)", fontWeight: 600, letterSpacing: 1, marginBottom: 8 }}>CONTACT & IMPRESSUM</div>

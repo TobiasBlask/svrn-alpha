@@ -7,15 +7,7 @@ import { Footer } from "./components/Footer";
 
 // Pages
 import Home from "./pages/Home";
-import Research from "./pages/Research";
-import ReferenceCasePage from "./pages/ReferenceCasePage";
-import WhitepaperPage from "./pages/WhitepaperPage";
-import Press from "./pages/Press";
 import About from "./pages/About";
-import ArticleGIC from "./pages/ArticleGIC";
-import ArticleOS from "./pages/ArticleOS";
-import ArticleSovereign from "./pages/ArticleSovereign";
-import ArticleCapacity from "./pages/ArticleCapacity";
 
 // --- Theme Toggle Hook ---
 const useTheme = () => {
@@ -53,15 +45,7 @@ export default function App() {
         <main style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/research" element={<Research />} />
-            <Route path="/reference-case" element={<ReferenceCasePage />} />
-            <Route path="/whitepaper" element={<WhitepaperPage />} />
-            <Route path="/press" element={<Press />} />
             <Route path="/about" element={<About />} />
-            <Route path="/research/gic-2028" element={<ArticleGIC />} />
-            <Route path="/research/os" element={<ArticleOS />} />
-            <Route path="/research/sovereign" element={<ArticleSovereign />} />
-            <Route path="/research/capacity" element={<ArticleCapacity />} />
           </Routes>
         </main>
         <Footer />

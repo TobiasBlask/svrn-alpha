@@ -31,11 +31,7 @@ export const Nav = ({ theme, toggleTheme }) => {
     }, [mobileMenuOpen]);
 
     const navLinks = [
-        { name: "Whitepaper", path: "/whitepaper" },
-        { name: "Reference Case", path: "/reference-case" },
-        { name: "Research", path: "/research" },
-        { name: "Press", path: "/press" },
-        { name: "About", path: "/about" },
+        { name: "About", path: "/about" }
     ];
 
     return (
