@@ -13,10 +13,10 @@ export default function Press() {
                         SVRN ALPHA Launches Sovereign AI Enablement Platform for European Investment Banking
                     </h1>
                     <p style={{ fontFamily: "var(--font-sans)", fontSize: 20, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
-                        Hamburg-based firm introduces three-pillar framework backed by academic research and validated deployment
+                        Hamburg & Frankfurt-based firm introduces three-pillar framework backed by academic research and validated deployment
                     </p>
                     <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-muted)", letterSpacing: 1, marginTop: 16 }}>
-                        HAMBURG, GERMANY — January 15, 2026
+                        HAMBURG & FRANKFURT, GERMANY — January 15, 2026
                     </div>
                 </div>
             </Section>
@@ -44,7 +44,7 @@ export default function Press() {
                             "The technology landscape changes every six months — new models, new regulations, new geopolitical realities," Prof. Dr. Blask continued. "Banks need an architecture that adapts, not one that locks them in. Sovereignty means the institution decides: which model, which infrastructure, which architecture. Always flexible. Always independent. That's the only future-proof strategy."
                         </blockquote>
                         <p>
-                            The company is headquartered in Hamburg, Germany, and serves investment banks across the DACH region, Nordics, and United Kingdom.
+                            The company is headquartered in Hamburg & Frankfurt, Germany, and serves investment banks across the DACH region, Nordics, and United Kingdom.
                         </p>
                     </div>
 
@@ -53,7 +53,7 @@ export default function Press() {
                     <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
                         <h3 style={{ fontFamily: "var(--font-sans)", fontSize: 24, color: "var(--text-primary)", margin: 0 }}>About SVRN ALPHA</h3>
                         <p style={{ fontFamily: "var(--font-sans)", fontSize: 15, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
-                            SVRN ALPHA is a sovereign AI enablement company for investment banking, headquartered in Hamburg, Germany. Founded by Prof. Dr. Tobias Blask (Professor, Founder & Chairman) and backed by MP Capital Markets, SVRN ALPHA transforms how financial institutions adopt AI through the Three-Pillar Model — a research-grounded framework addressing Education, Process, and Technology in that sequence. The company deploys model-agnostic, sovereign infrastructure that gives institutions full independence over their AI stack — evaluating US, Chinese, and European models per use case with zero vendor lock-in and Human-in-the-Loop architecture. Learn more at svrn-alpha.ai.
+                            SVRN ALPHA is a sovereign AI enablement company for investment banking, headquartered in Hamburg & Frankfurt, Germany. Founded by Prof. Dr. Tobias Blask (Professor, Founder & Chairman) and backed by MP Capital Markets, SVRN ALPHA transforms how financial institutions adopt AI through the Three-Pillar Model — a research-grounded framework addressing Education, Process, and Technology in that sequence. The company deploys model-agnostic, sovereign infrastructure that gives institutions full independence over their AI stack — evaluating US, Chinese, and European models per use case with zero vendor lock-in and Human-in-the-Loop architecture. Learn more at svrn-alpha.ai.
                         </p>
                     </div>
 
@@ -62,7 +62,7 @@ export default function Press() {
                         <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.6 }}>
                             <strong>SVRN ALPHA Communications</strong><br />
                             press@svrn-alpha.ai<br />
-                            Hamburg, Germany<br />
+                            Hamburg & Frankfurt, Germany<br />
                             svrn-alpha.ai
                         </div>
                     </div>
